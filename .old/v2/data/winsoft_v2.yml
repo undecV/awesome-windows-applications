@@ -1,0 +1,407 @@
+# VSCode setting for YAML Support by Red Hat: 
+# "yaml.customTags": ["!folder", "!software", "!a"],
+
+- !folder
+  anchor: Web Browser with add-ons - 網頁瀏覽器以及附加元件
+  sub: 
+  - !software
+    anchor: Firefox
+    link: "https://www.mozilla.org/zh-TW/firefox/all/"
+    licenses: [自由, MPL]
+    text: 讓你的心智與網路一樣自由開闊。
+    sub: 
+    - !folder
+      anchor: Editions
+      flags: ['PRO']
+      sub: 
+      - !software {anchor: Standard, link: "https://www.mozilla.org/zh-TW/firefox/all/"}
+      - !software {anchor: Extended Support Release (ESR), link: "https://www.mozilla.org/en-US/firefox/organizations/all/"}
+      - !software {anchor: Beta, link: "https://www.mozilla.org/en-US/firefox/beta/all/"}
+      - !software {anchor: Developer Edition, link: "https://www.mozilla.org/en-US/firefox/developer/all/"}
+      - !software {anchor: Nightly, link: "https://www.mozilla.org/en-US/firefox/nightly/all/"}
+    - !folder
+      anchor: Extensions
+      sub: 
+      - !folder
+        anchor: Basic - 基礎
+        sub: 
+        - !software {anchor: Adblock Plus, link: "https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/", text: 簡稱 ABP，著名廣告攔截插件。}
+        - !software {anchor: Copy as Markdown, link: "https://addons.mozilla.org/en-US/firefox/addon/copy-as-markdown/", text: 以 Markdown 等格式复制 URL，標題。}
+        - !software {anchor: Copy URL To Clipboard, link: "https://addons.mozilla.org/en-US/firefox/addon/url2clipboard/", text: 复制 URL，標題到剪贴板，便於分享等。}
+        - !software {anchor: Country Flags & IP Whois, link: "https://addons.mozilla.org/en-US/firefox/addon/country-flags-ip-whois/", text: 顯示網站所在國家的國旗。}
+        - !software {anchor: Firefox Multi-Account Containers, link: "https://addons.mozilla.org/zh-TW/firefox/addon/multi-account-containers/", text: Firefox 官方出品，小號多開，帳號隔離。}
+        - !software {anchor: Flagfox, link: "https://addons.mozilla.org/zh-TW/firefox/addon/flagfox/", text: 顯示網站所在國家的國旗。}
+        - !software {anchor: OneTab, link: "https://addons.mozilla.org/zh-TW/firefox/addon/onetab/", text: 將當前所有的分頁收起來並生成一個列表，加快瀏覽器速度。}
+        - !software {anchor: Pushbullet, link: "https://addons.mozilla.org/en-US/firefox/addon/pushbullet/", text: 快速在各種裝置之間傳遞訊息和檔案。}
+        - !software {anchor: Tab Center Redux, link: "https://addons.mozilla.org/en-US/firefox/addon/tab-center-redux/", text: 在側邊欄管理分頁（Tabs）。}
+        - !software {anchor: Undo Close Tab, link: "https://addons.mozilla.org/en-US/firefox/addon/undoclosetabbutton/", text: 一鍵重新打開最近關閉的分頁按鈕。}
+        - !software {anchor: Firefox Color, link: "https://color.firefox.com/", text: 客製化你的 Firefox 外觀。}
+        - !software {anchor: Markdown Here, link: "https://addons.mozilla.org/en-US/firefox/addon/markdown-here/", text: 使用 Markdown 撰寫 EMail，可以與 Evernote 搭配使用。}
+        - !software {anchor: Popup window, link: "https://addons.mozilla.org/en-US/firefox/addon/popup-window/", text: 使用迷你視窗打開網頁。}
+        - !software {anchor: YouTube Popout Player, link: "https://addons.mozilla.org/en-US/firefox/addon/youtube-popout-player/", text: 使用迷你視窗打開 Youtube 影片。}
+      - !folder
+        anchor: Privacy - 隱私保護
+        sub: 
+        - !software {anchor: Facebook Container, link: "https://addons.mozilla.org/en-US/firefox/addon/facebook-container/", text: 防止 Facebook 窺探和竊取你的隱私。}
+        - !software {anchor: Google search link fix, link: "https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/", text: 修正 Google 等搜尋引擎結果的重定向，防止搜尋引擎記錄你的點擊。}
+        - !software {anchor: HTTPS Everywhere, link: "https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/", text: 電子前哨基金會 EFF 出品，加密的你的通訊，在可以的情況下儘量使用 HTTPS 訪問網頁，更加的安全。}
+        - !software {anchor: Privacy Badger, link: "https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/", text: 電子前哨基金會 EFF 出品，屏蔽間諜廣告和追蹤腳本。}
+      - !folder
+        anchor: Special - 特殊需求
+        sub: 
+        - !software {anchor: FoxyProxy Standard, link: "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/", text: 管理切換代理伺服器，可用於科學上網。}
+        - !software {anchor: Steam Database, link: "https://addons.mozilla.org/en-US/firefox/addon/steam-database/", text: 顯示 Steam 商品的詳細信息，例如價格變化。}
+        - !software {anchor: Unblock Youku, link: "https://addons.mozilla.org/en-US/firefox/addon/unblock-youku-firefox/", text: 在海外看中國視頻網站，解除地區限制。}
+        - !software {anchor: 购物党实时比价工具, link: "https://addons.mozilla.org/en-US/firefox/addon/购物党实时比价工具-浏览器57以上版本安装/", text: 中國網路商城比價。}
+        - !software {anchor: 云盘万能钥匙, link: "https://addons.mozilla.org/en-US/firefox/addon/ypsuperkey/", text: 自動填寫百度云盤密碼，檢測鏈接是否有效。}
+        - !software {anchor: Aria2 Download Manager Integration, link: "https://addons.mozilla.org/en-US/firefox/addon/aria2-integration/", text: 與 Aria2 下載器搭配使用。}
+        - !software {anchor: YouTube Video and Audio Downloader (WebEx), link: "https://addons.mozilla.org/en-US/firefox/addon/youtube_downloader_webx/", flags: [HIDE], text: Youtube 下載。}
+        - !software {anchor: gooreplacer, link: "https://addons.mozilla.org/en-US/firefox/addon/gooreplacer/", flags: [PRO], text: 修復由於未知原因導致的 Google 字形在中國大陸顯示困難的問題。}
+        - !software {anchor: Octotree, link: "https://addons.mozilla.org/en-US/firefox/addon/octotree/", flags: [PRO], text: 樹狀顯示 Github 程式碼。}
+      - !folder
+        anchor: Advanced - 進階
+        sub: 
+        - !software {anchor: Greasemonkey, link: "https://addons.mozilla.org/zh-TW/firefox/addon/greasemonkey/", text: User Script 腳本必備。}
+        - !software {anchor: Stylus, link: "https://addons.mozilla.org/en-US/firefox/addon/styl-us/", text: User Styles 必備，可以客製化修改一些網站（例如 Google）的外觀樣式。}
+        - !software {anchor: New Tab Override, link: "https://addons.mozilla.org/zh-TW/firefox/addon/new-tab-override/", text: 自己定義新分頁顯示的內容。}
+        - !software {anchor: Quick Accept-Language Switcher, link: "https://addons.mozilla.org/en-US/firefox/addon/quick-accept-language-switc/", flags: [PRO], text: 修改 HTTP 的 Accept-Language 標頭。}
+        - !software {anchor: User-Agent Switcher, link: "https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/", flags: [PRO], text: 修改 HTTP 的 User-Agent 標頭。}
+        - !software {anchor: Cookie Quick Manager, link: "https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/", flags: [PRO], text: 修改 Cookies。}
+
+  - !software
+    anchor: Google Chrome
+    link: "https://www.google.com.tw/chrome/browser/desktop/index.html"
+    text: 瀏覽速度飛快。不僅快速簡單好上手，而且安全無虞，適用各種裝置。
+
+  - !software
+    anchor: Vivaldi
+    link: "https://vivaldi.com/download/"
+    text: 為我們的朋友而打造的瀏覽器。（與 Chrome 使用相同的插件）
+
+
+- !folder
+  anchor: Internet - 網路
+  sub: 
+
+  - !folder
+    anchor: Download - 下載
+    sub: 
+    - !software 
+      anchor: aria2
+      link: "https://aria2.github.io/"
+      licenses: [自由, GPL]
+      text: 多協議命令行下載器，功能強大需要調教，有很多 UI 界面可以選擇。
+      ref: [!a {anchor: 小众软件, link: "https://www.appinn.com/aria2-in-windows-setup/"}]
+    - !software {anchor: Free Download Manager, link: "http://www.freedownloadmanager.org/"}
+
+    - !folder
+      anchor: BitTorrent - 種子＼ＢＴ下載
+      sub: 
+      - !software {anchor: BitTorrent, link: "http://www.bittorrent.com/", text: 官方客戶端。}
+      - !software {anchor: μTorrent, link: "https://www.utorrent.com/", text: 官方客戶端。}
+      - !software
+        anchor: qBittorrent
+        link: "https://www.qbittorrent.org/"
+        text: 第三方客戶端，可訂製的種子搜尋功能。
+        licenses: [自由, GPL]
+        ref: 
+        - !a {anchor: PortableApps, link: "https://portableapps.com/apps/internet/qbittorrent_portable"}
+        - !a {anchor: 知乎, link: "https://www.zhihu.com/question/43640207/answer/202058150"}
+
+  - !folder
+    anchor: Email - 電子郵件
+    sub: 
+    - !software {anchor: Thunderbird, link: "https://www.mozilla.org/en-US/thunderbird/all/", text: Mozilla 家族，電子郵件客戶端。, licenses: [自由, MPL]}
+
+  - !folder
+    anchor: Remote Desktop - 遠端桌面
+    sub: 
+    - !software {anchor: TeamViewer, link: "https://www.teamviewer.com/zhtw/", text: 老牌遠端桌面。}
+
+
+- !folder
+  anchor: Multimedia - 多媒體
+  sub: 
+  - !software {anchor: Adobe 全家桶, link: "http://www.adobe.com/", flags: [Family], licenses: [商業],
+  text: 不二的選擇。}
+  - !software
+    anchor: Blender
+    link: "https://www.blender.org/"
+    text: 專業的 3D 創作軟體，還能做影片剪輯甚至游戲引擎。
+    licenses: [自由, GPL]
+    ref:
+    - !a {anchor: Wikipedia, link: "https://en.wikipedia.org/wiki/Blender_(software)"}
+
+  - !folder
+    anchor: Audio - 音頻
+    sub: 
+
+    - !folder
+      anchor: Player - 播放器
+      sub: 
+      - !software {anchor: foobar2000, link: "https://www.foobar2000.org/", text: 音樂播放器，專業強大，需要調教。}
+      - !software {anchor: AIMP, link: "http://www.aimp.ru/", text: 來自戰鬥民族的高顏值音樂播放器，支持換外觀。}
+      - !software {anchor: MiniLyrics, link: "http://www.crintsoft.com/", text: 為多種播放器自動下載並顯示歌詞。}
+
+  - !folder
+    anchor: Video - 視頻
+    sub: 
+
+    - !folder
+      anchor: Player - 播放器
+      sub: 
+      - !software {anchor: 视频播放の调教Play, text: 專業的播放器調教教程。, ref: [!a {anchor: 小众软件, link: "https://www.appinn.com/video-player-play-0-4/"}]}
+      - !software {anchor: K-Lite Codec Pack, link: "http://www.codecguide.com/", text: 播放器和編解碼器軟體集，專業、設定多、功能強大。}
+      - !software {anchor: VLC media player, link: "https://www.videolan.org/vlc/", text: 支持衆多格式的跨平臺播放器，支持串流，支持換外觀。, licenses: [自由, GPL]}
+
+    - !folder
+      anchor: Editor, Converter, Recorder, Live Stream - 剪輯、壓制、錄屏、直播串流
+      sub: 
+      - !software {anchor: 小丸工具箱, link: "http://maruko.appinn.me/", text: 壓制工具。}
+      - !software {anchor: Avidemux, link: "http://avidemux.org/", licenses: [自由, GPL], text: 日常簡單的影片處理。}
+      - !software {anchor: Open Broadcaster Software, link: "https://obsproject.com/", licenses: [自由, GPL], text: 簡稱 OBS，直播串流、錄屏。} 
+
+  - !folder
+    anchor: Image - 圖像
+    sub: 
+    - !folder
+      anchor: Viewer - 瀏覽器
+      sub: 
+      - !software
+        anchor: IrfanView
+        link: "http://www.irfanview.com/"
+        text: 快速小巧且功能強大的圖片瀏覽器，不僅僅是看圖。
+        ref: 
+        - !a {anchor: 善用佳软, link: "https://xbeta.info/use-irfanview.htm"}
+      - !software {anchor: ImageGlass, link: "http://www.imageglass.org/", text: 輕量、多才多藝的圖片瀏覽器。, licenses: [自由, GPL]}
+      - !software 
+        anchor: ComicsViewer
+        text: 看漫畫。
+        ref: 
+        - !a {anchor: 作者原文, link: "https://www.cnblogs.com/stronghorse/p/4913182.html"}
+        - !a {anchor: 百度盤, link: "http://yun.baidu.com/s/1qXFS9dy"}
+
+    - !folder
+      anchor: Editor - 編輯器
+      sub: 
+      - !software {anchor: GIMP, link: "https://www.gimp.org/", text: 點陣圖編輯軟體，自由軟體界的 Photoshop。, licenses: [自由, GPL]}
+      - !software {anchor: Inkscape, link: "https://inkscape.org/en/", text: 矢量圖編輯軟體，自由軟體界的 Ai 或 CorelDRAW。, licenses: [自由, GPL]}
+      - !software {anchor: Krita, link: "https://krita.org/en/", text: 繪圖軟體，KDE 家族，自由軟體界的 SAI（？）。, licenses: [自由, GPL]}
+      - !software {anchor: CLIP STUDIO, link: "http://www.clipstudio.net/", licenses: [商業], text: 插畫、漫畫、動畫，日本動漫製作的業界標準。}
+      - !software {anchor: PaintTool SAI, link: "http://systemax.jp/ja/sai/", licenses: [商業], text: 著名繪圖軟體，插畫、漫畫。}
+      - !software {anchor: MediBang Paint, link: "https://medibangpaint.com/", text: 插畫、漫畫。}
+
+    - !folder
+      anchor: Print Scrn - 截圖
+      sub: 
+      - !software {anchor: GifCam, link: "http://blog.bahraniapps.com/gifcam/", text: 以 GIF 的方式（生成動圖）錄屏。}
+      - !software {anchor: Snipaste, link: "https://zh.snipaste.com/", text: 截圖 + 貼圖，功能強大，簡單易用。}
+
+
+- !folder
+  anchor: Embellish and Easy Access - 美化和便捷使用
+  sub:
+  - !software {anchor: Rainmeter, link: "https://www.rainmeter.net/", text: 桌面小部件，系統美化的幾乎必備。, licenses: [自由, GPL]}
+  - !software
+    anchor: RocketDock
+    link: "https://rocketdock.com/"
+    text: 爲桌面添加 Mac 一樣的 Dock 工具。
+    flags: ['OLD']
+    sub: [!folder {anchor: extensions, sub: [!software {anchor: StackDocklet, link: "https://rocketdock.com/addon/docklets/47435", text: 收納快捷方式，讓桌面更簡潔。}]}]
+  - !software
+    anchor: QTTabBar
+    link: "http://qttabbar.wikidot.com/"
+    text: 為檔案總管（zhs：文件资源管理器）添加像網頁瀏覽器一樣的標籤頁功能。
+    ref: 
+    - !a {anchor: 小众软件, link: https://www.appinn.com/qt-tabbar/}
+  - !software {anchor: Carnac, link: "http://carnackeys.com/", text: 在屏幕上顯示鍵盤輸入。, licenses: [自由, MS-PL]}
+  - !software {anchor: Wallpaper Engine, text: <del>整個桌布都是我的播放器，</del>可高度客製化的動態桌布。, licenses: [商業], ref: [!a {anchor: Steam, link: "http://store.steampowered.com/app/431960/Wallpaper_Engine/"}]}
+
+- !folder
+  anchor: Files - 檔案處理
+  sub: 
+
+  - !folder
+    anchor: Compression - 壓縮
+    sub: 
+
+    - !software {anchor: Bandizip, link: "https://www.bandisoft.com/bandizip/", text: 多格式支持，方便的文字編碼轉換。}
+    - !software {anchor: PeaZip, link: "http://www.peazip.org/", licenses: [自由, GPL], text: 多格式支持。}
+    - !software {anchor: 7-Zip, link: "http://www.7-zip.org/", licenses: [自由, LGPL], text: 7z 格式原生，高壓縮率。}
+    - !software {anchor: WinRAR, link: "http://www.rarlab.com/download.htm", licenses: [商業], text: RAR 格式原生，可添加恢復用冗餘。<del>（其實不要錢也能用）</del>}
+
+  - !folder
+    anchor: Desktop Search - 桌面搜尋
+    sub: 
+    - !software
+      anchor: Everything
+      link: "https://www.voidtools.com/"
+      text: 超高速搜尋文件。
+      ref: 
+      - !a {anchor: 小众软件, link: "https://www.appinn.com/tag/everything/"}
+      - !a {anchor: Wikipedia, link: "https://zh.wikipedia.org/wiki/Everything_(软件)"}
+    - !software
+      anchor: Launchy
+      link: "http://www.launchy.net/"
+      text: 快速啓動工具，再也不需要尋找快捷方式。
+      licenses: [自由, GPL]
+      ref: 
+      - !a {anchor: 小众软件, link: "https://www.appinn.com/launchy/"}
+      - !a {anchor: Wikipedia, link: "https://zh.wikipedia.org/wiki/Launchy"}
+
+- !folder
+  anchor: Security - 安全
+  sub: 
+
+  - !folder
+    anchor: Antivirus - 反病毒
+    sub: 
+    - !software {anchor: Avast, link: "https://www.avast.com/zh-tw/index", text: 來自捷克，免費防毒軟體。}
+    - !software {anchor: Avira, link: "https://www.avira.com/", text: 來自德國，俗稱小紅傘，免費防毒軟體。}
+
+  - !folder
+    anchor: Others - 其他
+    sub: 
+    - !software {anchor: Eraser, link: "https://eraser.heidi.ie/", text: 安全徹底地擦除檔案，被擦除的檔案幾乎無法被恢復。}
+
+- !folder
+  anchor: Office - 辦公室＼文檔處理
+  sub: 
+  - !folder
+    anchor: PDF - 可攜式文件格式
+    sub: 
+    - !software {anchor: Sumatra PDF, link: "https://www.sumatrapdfreader.org/free-pdf-reader.html", text: 小巧快速的 PDF、電子書閱讀器。, licenses: [自由, GPL]}
+    - !software {anchor: Adobe Acrobat Reader DC, link: "https://get.adobe.com/tw/reader/", text: 原生 PDF 閱讀器。}
+
+  - !folder
+    anchor: Database - 資料庫
+    sub:
+    - !software
+      anchor: Memento Database
+      link: "https://mementodatabase.com/"
+      text: 強大易用的資料庫管理應用，有 Android 版。
+      ref:
+      - !a {anchor: Google Play, link: "https://play.google.com/store/apps/details?id=com.luckydroid.droidbase"}
+      - !a {anchor: 小众软件, link: "https://www.appinn.com/memento-database-for-android/"}
+
+  - !folder
+    anchor: Office suite - 辦公室套件
+    sub:
+    - !software {anchor: LibreOffice, link: "https://www.libreoffice.org/", text: 自由軟體界的 M$ Office。, licenses: [自由, MPL]}
+    - !software {anchor: Apache OpenOffice, link: "http://www.openoffice.org/", text: 自由軟體界的 M$ Office。, licenses: [自由]}
+
+  - !folder
+    anchor: Mind Mapping＼心智圖＼思維導圖
+    sub: 
+    - !software {anchor: FreeMind, link: "http://freemind.sourceforge.net/wiki/index.php/Main_Page", licenses: [自由, GPL]}
+
+  - !folder
+    anchor: Markdown
+    sub: 
+    - !software {anchor: Typora, link: "https://typora.io/", text: 端莊優雅的 Markdown 編輯器。}
+
+  - !folder
+    anchor: EPUB
+    sub: 
+    - !software {anchor: Calibre, link: "https://calibre-ebook.com/", licenses: [自由, GPL], text: 電子書書櫃、EPUB 閱讀器。}
+    - !software {anchor: Sigil, link: "https://sigil-ebook.com/", licenses: [自由, GPL], text: EPUB 編輯器。}
+
+  - !folder
+    anchor: Text editor - 文本编辑器
+    sub: 
+    - !software
+      anchor: Notepad++
+      link: "https://notepad-plus-plus.org/zh/"
+      licenses: [自由, GPL]
+      text: 純文字程式碼編輯器，代替記事本，從此再也不怕亂碼。
+    - !software
+      anchor: Visual Studio Code
+      link: "https://code.visualstudio.com/"
+      flags: [PRO]
+      licenses: [自由, MIT]
+      text: 純文字程式碼編輯器，強大的擴展性，假裝是編輯器的 IDE。
+
+
+- !folder
+  anchor: Languages - 語言
+  sub: 
+
+  - !folder
+    anchor: IME - 輸入法
+    sub:
+    - !software
+      anchor: RIME
+      link: "http://rime.im/"
+      licenses: [自由, LGPL]
+      text: 擊響中文之韻。中文輸入法引擎，支持注音、拼音、五筆等各種常見和不常見的輸入法，專業強大、自由度極高、可高度定製、校難上手。
+      sub: 
+      - !software {anchor: 小狼毫 Weasel, link: "https://rime.im/download/", text: Windows 輸入法前端。}
+
+
+  - !folder
+    anchor: AppLocale - 轉區
+    sub:
+    - !software 
+      anchor: Locale-Emulator
+      link: "https://github.com/xupefei/Locale-Emulator/releases"
+      licenses: [自由, LGPL]
+      text: 轉區工具。
+    - !software {anchor: NTLEA, link: "https://ntlea.codeplex.com/", text: 轉區。, licenses: [自由, BSD], tags: [停更]}
+
+
+- !folder
+  anchor: Utilities - 應用工具
+  sub:
+  - !software
+    anchor: AutoHotkey
+    link: "https://autohotkey.com/"
+    text: 強大、易學（輕編程）的自動化工具。
+    licenses: [自由, GPL]
+    ref: 
+    - !a {anchor: Wikipedia, link: "https://zh.wikipedia.org/wiki/AutoHotkey"}
+  - !software
+    anchor: 弹窗广告拦截器
+    text: 如標題，這樣就能夠優雅的使用那些無時無刻不在彈廣告的軟體了。
+    ref: 
+    - !a {anchor: 下載, link: "http://www.360drm.com/files/adkiller.zip"}
+    - !a {anchor: 知乎, link: "https://www.zhihu.com/question/24265718/answer/27226434"}
+  - !software
+    anchor: Moo0 家族
+    link: "http://www.moo0.com/"
+    flags: [Family]
+    text: "37 款免費 + 2 款付費的小巧實用的工具集，好看易用。"
+  - !software
+    anchor: xiles 家族
+    link: "http://www.xiles.net/"
+    text: 簡單、易於使用和精心設計的軟體。
+    flags: [Family]
+    sub: 
+    - !software {anchor: nexusfile, text: 檔案總管}
+    - !software {anchor: nexusfont, text: 字形瀏覽器}
+    - !software {anchor: nexusimage, text: 圖片瀏覽器}
+
+- !folder
+  anchor: System Tools - 系統工具
+  sub:
+  - !software
+    anchor: SpaceSniffer
+    link: "http://www.uderzo.it/main_products/space_sniffer/index.html"
+    text: 檢視硬碟佔用空間分佈。
+    ref: 
+    - !a {anchor: 小众软件, link: "https://www.appinn.com/space-sniffer/"}
+  - !software
+    anchor: Piriform 家族
+    link: "https://www.piriform.com"
+    flags: [Family]
+    text: 專業，易用。
+    sub:
+    - !software {anchor: CCleaner, link: "https://www.ccleaner.com/ccleaner", text: 清垃圾。}
+    - !software {anchor: Defraggler, link: "https://www.ccleaner.com/defraggler", text: 磁碟碎片重組。}
+    - !software {anchor: Recuva, link: "https://www.ccleaner.com/recuva", text: 刪除文件恢復。}
+  - !software {flags: [PRO, Family], anchor: Windows Sysinternals, link: "https://docs.microsoft.com/en-us/sysinternals/"}
+
+- !folder
+  anchor: Manager - 程式管家
+  sub:
+  - !software {anchor: Steam, link: "http://store.steampowered.com/", text: 數位發行平台，遊戲、軟體、影片、音樂...}
+  - !software {anchor: PortableApps.com, link: "https://portableapps.com/", licenses: [開源], text: 便攜軟體，使得軟體不依賴電腦。}

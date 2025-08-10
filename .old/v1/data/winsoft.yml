@@ -1,0 +1,291 @@
+# URL: https?:\/\/?[\w./-]+
+
+- !fld
+  anchor: Web Browser with add-ons - 網路瀏覽器以及附加元件
+  sub: 
+  - !sfw
+    anchor: Mozilla Firefox
+    link: "https://www.mozilla.org/zh-TW/firefox/all/"
+    text: 讓你的心智與網路一樣自由開闊。
+    editions: 
+    - !sfw {anchor: Extended Support Release (ESR), link: "https://www.mozilla.org/en-US/firefox/organizations/all/"}
+    - !sfw {anchor: Beta, link: "https://www.mozilla.org/en-US/firefox/beta/all/"}
+    - !sfw {anchor: Developer Edition, link: "https://www.mozilla.org/en-US/firefox/developer/all/"}
+    - !sfw {anchor: Nightly, link: "https://www.mozilla.org/en-US/firefox/nightly/all/"}
+    extensions:
+    - !fld
+      anchor: Basic - 基礎
+      sub: 
+      - !sfw {anchor: Adblock Plus, link: "https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/", text: （簡稱：ABP）廣告攔截。}
+      - !sfw {anchor: Private Tab, link: "https://addons.mozilla.org/en-US/firefox/addon/private-tab/", text: 隱私分頁，在瀏覽一些網頁時不留下歷史記錄等。}
+      - !sfw {anchor: Auto Unload Tab, link: "https://addons.mozilla.org/en-US/firefox/addon/auto-unload-tab/", text: 速度優化，自動 Unload 不看的分頁。}
+      - !sfw {anchor: Copy Fixer, link: "https://addons.mozilla.org/en-US/firefox/addon/copy-fixer/", text: 無選取的狀態下，Ctrl/Command-C 快捷鍵複製標題和網址。}
+      - !sfw {anchor: DownThemAll!, link: "https://addons.mozilla.org/en-US/firefox/addon/downthemall/", text: 從此電腦里再無迅雷。}
+      - !sfw {anchor: FireCaptor, link: "https://addons.mozilla.org/en-US/firefox/addon/firecaptor/", text: 截圖，可以一鍵一整個網頁一張截圖等方便的功能。}
+      - !sfw {anchor: Flagfox, link: "https://addons.mozilla.org/zh-TW/firefox/addon/flagfox/", text: 顯示網站所在國家的國旗。}
+      - !sfw {anchor: Markdown Viewer, link: "https://addons.mozilla.org/zh-TW/firefox/addon/markdown-viewer/", text: 使用 Firefox 閱讀 Markdown 文件。}
+      - !sfw {anchor: OneTab, link: "https://addons.mozilla.org/zh-TW/firefox/addon/onetab/", text: 將當前所有的分頁收起來並生成一個列表，加快瀏覽器速度。}
+      - !sfw {anchor: Personas Plus, link: "https://addons.mozilla.org/zh-TW/firefox/addon/personas-plus/", text: Firefox 的主題，讓你的瀏覽器顏值更高。}
+      - !sfw {anchor: QrCodeR, link: "https://addons.mozilla.org/zh-TW/firefox/addon/qrcoder/", text: 將當前網址或選中的文字生成 QrCode。}
+      - !sfw {anchor: Tab Groups, link: "https://addons.mozilla.org/zh-TW/firefox/addon/tab-groups-panorama/", text: 分頁分組。}
+    - !fld
+      anchor: Special - 特殊需求
+      sub: 
+      - !sfw {anchor: gooreplacer, link: "https://addons.mozilla.org/zh-TW/firefox/addon/gooreplacer/", text: 修復由於牆導致的 Google 字形在中國大陸顯示困難的問題。}
+      - !sfw {anchor: FoxyProxy Standard, link: "https://addons.mozilla.org/zh-TW/firefox/addon/foxyproxy-standard/", text: 管理切換代理伺服器，科學上網用。}
+      - !sfw {anchor: 购物党全网比价, link: "https://addons.mozilla.org/zh-TW/firefox/addon/购物党全网比价-淘宝京东比价-历史价格跟踪-降价提醒-收藏夹/", text: 如標題。}
+      - !sfw {anchor: Unblock Youku, link: "https://addons.mozilla.org/zh-TW/firefox/addon/unblock-youku/", text: 在海外解鎖 Youku 等影片網站的瀏覽限制。}
+    - !fld
+      anchor: Advanced - 進階
+      sub: 
+      - !sfw {anchor: Copy URL To Clipboard, link: "https://addons.mozilla.org/en-US/firefox/addon/url2clipboard/", text: 复制 URL，標題到剪贴板，便於分享等。}
+      - !sfw {anchor: Classic Theme Restorer, link: "https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer/", text: 恢復傳統 UI 界面。}
+      - !sfw {anchor: Cookies Manager+, link: "https://addons.mozilla.org/en-US/firefox/addon/cookies-manager-plus/", text: 管理 Cookies。}
+      - !sfw {anchor: FlashGot Mass Downloader, link: "https://addons.mozilla.org/zh-TW/firefox/addon/flashgot/", text: 一鍵下載網頁中所有鏈接、提取影片下載地址等。}
+      - !sfw {anchor: Greasemonkey, link: "https://addons.mozilla.org/zh-TW/firefox/addon/greasemonkey/", text: 腳本必備。}
+      - !sfw {anchor: Tab Mix Plus, link: "https://addons.mozilla.org/zh-TW/firefox/addon/tab-mix-plus/", text: 分頁功能增強。}
+      - !sfw {anchor: New Tab Override, link: "https://addons.mozilla.org/zh-TW/firefox/addon/new-tab-override/", text: 自己定義新分頁顯示的內容。}
+      - !sfw {anchor: Quick Locale Switcher, link: "https://addons.mozilla.org/zh-TW/firefox/addon/quick-locale-switcher/", text: 更換瀏覽器語言相關設定。}
+      - !sfw {anchor: User Agent Switcher, link: "https://addons.mozilla.org/zh-TW/firefox/addon/user-agent-switcher/", text: 更換瀏覽器的 User Agent 相關設定。}
+  - !sfw {anchor: Google Chrome, link: "https://www.google.com.tw/chrome/browser/desktop/index.html", text: 下載速度飛快的免費網路瀏覽器。（Google 真不會寫標題...}
+  - !sfw {anchor: Vivaldi, link: "https://vivaldi.com/download/", text: 為我們的朋友而打造的瀏覽器。（與 Chrome 使用相同的插件）} 
+
+- !fld
+  anchor: Internet - 網路
+  sub:
+  - !fld
+    anchor: Download - 下載
+    sub: 
+    - !fld
+      anchor: Cross-protocol - 多協議
+      sub: 
+      - !sfw {anchor: aria2, link: "https://aria2.github.io/", text: 命令行，功能強大，超難上手。}
+      - !sfw {anchor: Free Download Manager, link: "http://www.freedownloadmanager.org/"}
+      - !sfw {anchor: Firefox + DownThemAll!, text: （見上文）}
+      - !sfw {flags: ['?'], anchor: FlashGet, link: "http://www.flashget.com/index_en.html"}
+    - !fld
+      anchor: BitTorrent - 種子
+      sub: 
+      - !fld
+        anchor: Original - 官方客戶端
+        sub: 
+        - !sfw {anchor: BitTorrent, link: "http://www.bittorrent.com/"}
+        - !sfw {anchor: μTorrent, link: "https://www.utorrent.com/"}
+      - !fld
+        anchor: Others - 第三方客戶端
+        sub: 
+        - !sfw {anchor: qBittorrent, link: "https://www.qbittorrent.org/", text: 可訂製的種子搜尋引擎的搜尋功能。, ref: [!i {anchor: PortableApps, link: "https://portableapps.com/apps/internet/qbittorrent_portable"}, !i {anchor: 知乎, link: "https://www.zhihu.com/question/43640207/answer/202058150"}]}
+        - !sfw {flags: ['?'], anchor: BitComet, link: "https://www.bitcomet.com/en"}
+  - !fld
+    anchor: Email - 電子郵件
+    sub: 
+    - !sfw {anchor: Thunderbird, link: "https://www.mozilla.org/en-US/thunderbird/all/", text: Mozilla 家族，電子郵件客戶端。}
+
+- !fld
+  anchor: Multimedia - 多媒體
+  sub: 
+  - !fam {anchor: Adobe 全家桶, link: "http://www.adobe.com/", tags: [商業軟體],
+  text: 不二的選擇。}
+  - !fld
+    anchor: Audio - 音頻：音樂，聽力...
+    sub: 
+    - !fld
+      anchor: Player - 播放器
+      sub: 
+      - !sfw {anchor: foobar2000, link: "https://www.foobar2000.org/", text: 音樂播放器，專業，上手難，功能強大。}
+      - !sfw {anchor: AIMP, link: "http://www.aimp.ru/", text: 來自戰鬥民族的音樂播放器。}
+      - !sfw {anchor: MiniLyrics, link: "http://www.crintsoft.com/", text: 為多種播放器自動下載並顯示歌詞。}
+    - !fld
+      anchor: ID3 Tag Editor - ID3 訊息編輯器
+      flags: ['x']
+      sub: 
+      - !sfw {flags: ['?'], anchor: ID3 tag editor, link: "http://www.softpointer.com/AudioShell.htm"}
+      - !sfw {flags: ['?'], anchor: Mp3tag, link: "http://www.mp3tag.de/en/dodownload.html"}
+  - !fld
+    anchor: Video - 視頻：動畫，電影，電視劇，DVD...
+    sub: 
+    - !fld
+      anchor: Player - 播放器
+      sub: 
+      - !sfw {anchor: 视频播放の调教Play, text: 專業的播放器使用教程。, ref: [!i {anchor: 小众软件, link: "https://www.appinn.com/video-player-play-0-4/"}]}
+      - !sfw {anchor: K-Lite Codec Pack, link: "http://www.codecguide.com/", text: 軟體集，專業，上手難，功能強大。}
+      - !sfw {anchor: VLC media player, link: "https://www.videolan.org/vlc/", text: 功能強大，可換 Skin，好看。}
+    - !fld
+      anchor: Converter - 壓制轉檔
+      sub: 
+      - !sfw {anchor: 小丸工具箱, link: "http://maruko.appinn.me/", text: 處理音視訊等多媒體檔案的軟體。}
+    - !fld
+      anchor: Editing - 剪輯
+      sub: 
+      - !sfw {flags: ['?'], anchor: DaVinci Resolve, link: "https://ephtracy.github.io/", text: "Professional Video editing."}
+      - !sfw {anchor: Avidemux, link: "http://avidemux.org/", text: 日常影片處理。}
+    - !fld
+      anchor: Video Recording and Live Streaming - 錄屏和直播串流
+      sub:
+      - !sfw {anchor: Open Broadcaster Software, link: "https://obsproject.com/", text: （簡稱：OBS）直播串流，錄屏。}
+  - !fld
+    anchor: Image - 圖像
+    sub: 
+    - !fld
+      anchor: Viewer - 瀏覽器
+      sub: 
+      - !sfw {anchor: ImageGlass, link: "http://www.imageglass.org/", text: 輕量快速的圖片瀏覽器。}
+      - !sfw {anchor: ComicsViewer, text: 看漫畫。, ref: [!i {anchor: 作者原文, link: "https://www.cnblogs.com/stronghorse/p/4913182.html"}, !i {anchor: 百度盤, link: "http://yun.baidu.com/s/1qXFS9dy"}]}
+      - !sfw {anchor: IrfanView, link: "http://www.irfanview.com/", text: 不僅僅是看圖。, ref: [!i {anchor: 善用佳软, link: "https://xbeta.info/use-irfanview.htm"}]}
+    - !fld
+      anchor: Editor - 編輯器
+      sub: 
+      - !sfw {anchor: GIMP, link: "https://www.gimp.org/", text: 自由軟體界的 Photoshop。}
+      - !sfw {anchor: Inkscape, link: "https://inkscape.org/en/", text: 自由軟體界的 Ai 或 CorelDRAW。}
+      - !sfw {anchor: CLIP STUDIO, link: "http://www.clipstudio.net/", tags: [商業軟體], text: 日本動漫製作的業界標準。}
+      - !sfw {anchor: PaintTool SAI, link: "http://systemax.jp/ja/sai/", tags: [商業軟體], text: 插畫、漫畫。}
+      - !sfw {anchor: MediBang Paint, link: "https://medibangpaint.com/", text: 插畫、漫畫。}
+      - !sfw {flags: ['?'], anchor: TVPaint, link: "https://www.tvpaint.com/", text: 動畫製作。}
+      - !sfw {flags: ['?'], anchor: Krita, link: "https://krita.org/en/", text: "Digital Painting. Creative Freedom.", ref: [!i {anchor: Wikipedia, link: "https://en.wikipedia.org/wiki/Krita"}]}
+    - !fld
+      anchor: Print Scrn - 截圖
+      sub: 
+      - !sfw {anchor: GifCam, link: "http://blog.bahraniapps.com/gifcam/", text: 以 GIF 的方式（生成動圖）錄屏。}
+      - !sfw {anchor: Snipaste, link: "https://zh.snipaste.com/", text: 截圖 + 貼圖，功能強大，簡單易用。}
+  - !fld
+    anchor: 3D
+    sub:
+    - !sfw {anchor: Blender, link: "https://www.blender.org/", text: 開源 3D 創作軟體，除了 3D 還有影片編輯功能甚至游戲引擎。（功能多到不知道放哪ww...）, ref: [!i {anchor: Wikipedia, link: "https://en.wikipedia.org/wiki/Blender_(software)"}]}
+    - !sfw {flags: ['?'], anchor: MagicaVoxel, link: "https://ephtracy.github.io/", text: "8-bit voxel art editor."}
+    - !sfw {flags: ['?'], anchor: Sculptris, link: "http://pixologic.com/sculptris/"}
+
+- !fld
+  anchor: Embellish and Easy Access - 美化和便捷使用
+  sub:
+  - !sfw {anchor: Rainmeter, link: "https://www.rainmeter.net/", text: 桌面美化必備，在桌面上增加自定義小部件。}
+  - !sfw
+    anchor: RocketDock
+    link: "https://rocketdock.com/"
+    text: 收納快捷方式，讓桌面更簡潔。
+    extensions: 
+    - !sfw {anchor: StackDocklet, link: "https://rocketdock.com/addon/docklets/47435"}
+  - !sfw {anchor: QTTabBar, link: "http://qttabbar.wikidot.com/", text: Windows 內置檔案總管（zhs：文件资源管理器）插件，為你的檔案總管添加標籤頁功能。}
+  - !sfw {anchor: Carnac, link: "http://carnackeys.com/", text: 屏幕上顯示鍵盤輸入。}
+  - !sfw {anchor: Wallpaper Engine, text: ~~整個桌布都是我的播放器~~ 不只是動態桌布。, tags: [商業軟體], ref: [!i {anchor: Steam, link: "http://store.steampowered.com/app/431960/Wallpaper_Engine/"}]}
+
+- !fld
+  anchor: Files - 檔案處理
+  sub: 
+  - !fld
+    anchor: Compression - 壓縮
+    sub: 
+    - !fld
+      anchor: All-In-One - 多格式支持
+      sub: 
+      - !sfw {anchor: Bandizip, link: "https://www.bandisoft.com/bandizip/"}
+      - !sfw {anchor: PeaZip, link: "http://www.peazip.org/"}
+    - !fld
+      anchor: Original Format - 自有格式原生
+      sub: 
+      - !sfw {anchor: 7-Zip, link: "http://www.7-zip.org/", text: 7-Zip 格式原生。}
+      - !sfw {anchor: WinRAR, link: "http://www.rarlab.com/download.htm", tags: [商業軟體], text: RAR 格式原生。~~（其實不要錢也能用）~~}
+  - !sfw {anchor: Everything, link: "https://www.voidtools.com/", text: 快速搜尋文件。}
+
+- !fld
+  anchor: Security - 安全
+  sub: 
+  - !fld
+    anchor: Antivirus - 反病毒
+    sub: 
+    - !sfw {anchor: Avast, link: "https://www.avast.com/zh-tw/index", text: 來自捷克，免費防毒軟體。}
+    - !sfw {anchor: Avira, link: "https://www.avira.com/", text: 來自德國，免費防毒軟體。}
+  - !fld
+    anchor: Others - 其他
+    sub: 
+    - !sfw {anchor: Eraser, link: "https://eraser.heidi.ie/", text: 檔案擦除，被擦除的檔案~~無法~~難以被恢復。}
+    - !sfw {flags: ['?'], anchor: Malwarebytes AdwCleaner, link: "https://www.malwarebytes.com/adwcleaner/"}
+
+- !fld
+  anchor: Office - 辦公室＼文檔處理
+  sub: 
+  - !fld
+    anchor: PDF - 可攜式文件格式
+    sub: 
+    - !sfw {anchor: Sumatra PDF, link: "https://www.sumatrapdfreader.org/free-pdf-reader.html", text: 小巧快速的 PDF、電子書閱讀器。}
+    - !sfw {anchor: Adobe Acrobat Reader DC, link: "https://get.adobe.com/tw/reader/", text: 原生 PDF 閱讀器，可靠強大。}
+  - !fld
+    anchor: Office suite - 辦公室套件
+    sub:
+    - !sfw {anchor: LibreOffice, link: "https://www.libreoffice.org/", text: 自由軟體界的辦公軟體，代替 MS Office。}
+  - !fld
+    anchor: Mind Mapping - 心智圖＼思維導圖
+    sub: 
+    - !sfw {anchor: XMind, link: "https://www.xmind.net/"}
+    - !sfw {anchor: FreeMind, link: "http://freemind.sourceforge.net/wiki/index.php/Main_Page"}
+  - !fld
+    anchor: Markdown
+    sub: 
+    - !sfw {anchor: Typora, link: "https://typora.io/", text: 端莊優雅的 Markdown 編輯器。}
+  - !fld
+    anchor: Text editor - 文本编辑器
+    sub: 
+    - !sfw {anchor: Notepad++, link: "https://notepad-plus-plus.org/zh/", text: 純文字編輯器，代替記事本，從此再也不怕亂碼。}
+
+- !fld
+  anchor: Languages - 語言
+  sub: 
+  - !fld
+    anchor: IME - 輸入法
+    sub:
+    - !sfw {anchor: RIME, link: "http://rime.im/", text: 擊響中文之韻。中文輸入法，支持拼音、五筆等各種模式，專業。}
+  - !fld
+    anchor: AppLocale - 轉區
+    sub:
+    - !sfw {anchor: Locale-Emulator, link: "https://github.com/xupefei/Locale-Emulator/releases", text: 轉區。}
+    - !sfw {anchor: NTLEA, link: "https://ntlea.codeplex.com/", text: 轉區。}
+
+- !fld
+  anchor: Utilities - 應用工具
+  sub:
+  - !sfw {anchor: AutoHotkey, link: "https://autohotkey.com/", text: 全局快捷鍵等。}
+  - !sfw {anchor: 弹窗广告拦截器, link: "http://adkiller.360drm.com/", text: 如標題，這樣就能夠優雅的使用那些天天彈廣告的軟體了。, ref: [!i {anchor: 知乎, link: "https://www.zhihu.com/question/24265718/answer/27226434"}]}
+  - !fam {anchor: Moo0 家族, link: "http://www.moo0.com/", text: "38 款免費 + 2 款付費的小巧實用的工具集，好看好用。"}
+  - !fam
+    anchor: xiles 家族
+    link: "http://www.xiles.net/"
+    text: 好用，高顔值。
+    sub: 
+    - !sfw {anchor: nexusfile, text: 檔案總管}
+    - !sfw {anchor: nexusfont, text: 字形瀏覽器}
+    - !sfw {anchor: nexusimage, text: 圖片瀏覽器}
+  - !fam {flags: ['?'], anchor: NirSoft 家族, link: "http://www.nirsoft.net/", text: 免費小巧實用的工具集。}
+  - !fam {flags: ['?'], anchor: Bandisoft 家族, link: "https://www.bandisoft.com/"}
+  - !fam {flags: ['?'], anchor: nullice 家族, link: "http://nullice.com/"}
+
+- !fld
+  anchor: System Tools - 系統工具
+  sub:
+  - !fam
+    anchor: Piriform 家族
+    link: "https://www.piriform.com"
+    text: 專業，易用。
+    sub:
+    - !sfw {anchor: CCleaner, link: "https://www.piriform.com/ccleaner", text: 清垃圾。}
+    - !sfw {anchor: Defraggler, link: "https://www.piriform.com/defraggler", text: 磁碟碎片重組。}
+    - !sfw {anchor: Recuva, link: "https://www.piriform.com/recuva", text: 刪除文件恢復。}
+  - !fam {flags: ['?'], anchor: IObit 家族, link: "http://www.iobit.com/en/index.php"}
+  - !fld
+    anchor: Hardware - 硬體相關
+    sub:
+    - !fam
+      anchor: Crystal Disk 家族
+      link: "https://crystalmark.info/en/"
+      sub:
+      - !sfw {anchor: CrystalDiskInfo, link: "https://crystalmark.info/en/download/", text: 硬碟狀態監測。}
+      - !sfw {anchor: CrystalDiskMark, link: "https://crystalmark.info/en/download/", text: 硬碟性能測試。}
+  - !fld
+    anchor: Test
+    flags: ['PRO']
+    sub:
+    - !sfw {flags: ['?'], anchor: AIDA64, link: "https://www.aida64.com/", text: "System Information, Diagnostics and Benchmark Tool."}
+
+- !fld
+  anchor: Management - 程式管家
+  sub:
+  - !sfw {anchor: Steam, link: "http://store.steampowered.com/", text: 數位發行平台，遊戲、軟體、影片、音樂...}
+  - !sfw {anchor: PortableApps.com, link: "https://portableapps.com/", text: 便攜軟體，使得軟體不依賴電腦。}

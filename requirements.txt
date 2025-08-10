@@ -1,0 +1,4 @@
+PyYAML
+types-PyYAML
+jinja2
+minify-html

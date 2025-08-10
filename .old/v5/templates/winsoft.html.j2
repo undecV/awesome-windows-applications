@@ -1,0 +1,42 @@
+{% set flags_filter = ['Abandon', 'Pro', 'Old', 'Discontinued'] -%}
+{% set count = namespace(filter=0, folder=0, element=0) -%}
+{% macro h(level, string) %}<h{{ level }}>{{ string }}</h{{ level }}>{% endmacro -%}
+{% macro a(string, href) %}{% if href %}<a href="{{ href }}">{{ string }}</a>{% else %}{{ string }}{% endif %}{% endmacro -%}
+{% macro ele_str(i) -%}
+{% if foss_str(i) %}<code>{{ foss_str(i) }}</code> {% endif -%}
+{% set text %}<strong>{{ i.text }}</strong>{% endset -%}
+{{ a(text, i.link) -}}
+{% if i.cmnt or i.flag or i.refs %}: {% endif -%}
+{% if i.flag %}[{% for f in i.flag %}<code>{{ f }}</code>{% if not loop.last %}, {% endif %}{% endfor %}] {% endif -%}
+{% if i.cmnt %}{{ i.cmnt }}{% endif -%}
+{% if i.refs %}({% for r in i.refs %}{{ a(r.text, r.href) }}{% if not loop.last %}, {% endif %}{% endfor %}){% endif -%}
+{%- endmacro -%}
+{% macro mrecr(r, depth) %}
+{% if r.eles -%}
+<ul>
+{% for e in r.eles recursive -%}
+{%- if not isdisjoint(e.flag, flags_filter) %}{% set count.filter = count.filter + 1 %}{% continue %}{% endif -%}
+{%- set count.element = count.element + 1 -%}
+<li>{{ele_str(e)}}</li>
+{% if e.subi -%}<ul>{{ loop(e.subi) }}</ul>{%- endif %}
+{%- endfor -%}
+</ul>
+{%- endif -%}
+{% for f in r.flds -%}
+{%- if not isdisjoint(f.flag, flags_filter) %}{% set count.filter = count.filter + 1 %}{% continue %}{% endif -%}
+{%- set count.folder = count.folder + 1 -%}
+{{ a(h(depth+3, f.text), f.link) }}
+{%- if f.recr -%}{{ mrecr(f.recr, depth+1) }}{%- endif %}
+{%- endfor %}
+{% endmacro -%}
+<!DOCTYPE html>
+<html>
+<head><title>This is a title</title></head>
+<body>
+{{- mrecr(recr, 0) -}}
+<!--
+Flags filter: {{ flags_filter }}
+Count: {filter: {{ count.filter }}, folders: {{ count.folder }}, elements: {{ count.element }}}
+-->
+</body>
+</html>

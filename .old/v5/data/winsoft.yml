@@ -1,0 +1,277 @@
+$schema: "./winsoft.schema.json"
+meta:
+  version:
+    - {ver: "5.3.1", date: 2023-06-29, note: "更新和修正了部分內容。"}
+    - {ver: "5.3.0", date: 2023-06-18, note: "更新和修正了一拖拉庫內容。"}
+    - {ver: "5.1.0", date: 2021-01-06, note: "第五版更新。更新和修正了部分內容；程式碼演進，模板更新；軟體資訊由 YAML 格式儲存和整理，再由 Python 和 Jinja2 渲染而成。"}
+    - {ver: "5.0.0", date: 2020-12-13, note: "第五版更新。更新和修正了部分內容；程式碼重寫，文章生成基於 Python、jinja2 和 YAML。"}
+    - {ver: "3.0.1", date: 2020-07-24, note: "第三版更新。更新和修正了部分內容；原始資料重新結構；程式碼重寫。"}
+    - {ver: "2.1.2", date: 2019-04-15, note: "更新和修正了部分內容。"}
+    - {ver: "2.1.1", date: 2019-01-31, note: "更新和修正了部分內容。"}
+    - {ver: "2.1.0", date: 2019-01-16, note: "更新和修正了部分內容；合併一些瑣碎的分類；獨立出 `Licenses` 標記；程式碼更新。"}
+    - {ver: "2.0.0", date: 2018-08-18, note: "第二版更新。更新和修正了部分內容；增加了更詳細的標記；修正了不兼容的排版；程式碼更新。"}
+    - {ver: "1.4.1", date: 2018-03-24, note: "更新和修正了部分內容。"}
+    - {ver: "1.4.0", date: 2018-03-01, note: "更新和修正了部分內容；文章生成基於 Python 和 YAML。"}
+    - {ver: "1.3.1", date: 2018-02-07, note: "修正了不兼容的排版。"}
+    - {ver: "1.3.0", date: 2018-02-06, note: "修正了不兼容的排版。"}
+    - {ver: "1.2.4", date: 2017-12-30, note: ""}
+    - {ver: "1.2.3", date: 2017-12-18, note: ""}
+    - {ver: "1.2.2", date: 2017-12-02, note: ""}
+    - {ver: "1.2.1", date: 2017-11-30, note: ""}
+    - {ver: "1.2.0", date: 2017-08-21, note: ""}
+    - {ver: "1.1.0", date: 2017-07-26, note: ""}
+  flags: [Abandon, Discontinued, Abandon, Pro, Family]
+data:
+- text: Web Browser - 網路瀏覽器
+  type: folder
+  subi:
+    - {text: Mozilla Firefox, link: "https://www.mozilla.org/zh-TW/firefox/all/", cmnt: 讓你的心智與網路一樣自由開闊。, lice: MPL-2.0}
+    - {text: Google Chrome, link: "https://www.google.com.tw/chrome/browser/desktop/index.html", cmnt: 無比簡易、安全又快速的瀏覽器。, lice: Proprietary}
+    - {text: Microsoft Edge, link: "https://www.microsoft.com/zh-tw/edge/download", cmnt: 基於 Chromium，內建豐富功能，以及搭載AI的次世代搜尋。, lice: Proprietary}
+    - {flag: [Abandon], text: Vivaldi, link: "https://vivaldi.com/download/", cmnt: 為我們的朋友而打造的瀏覽器。, lice: Proprietary}
+
+- text: Internet - 網路
+  type: folder
+  subi:
+    - {flag: [Abandon], text: OpenNetMeter, link: "https://github.com/Ashfaaq18/OpenNetMeter", cmnt: 網路流量監視器。, lice: Apache-2.0}
+    - {flag: [Discontinued], text: BitMeter OS, link: "https://codebox.net/pages/bitmeteros-downloads", cmnt: 網路流量監視器。, lice: GPL-3.0}
+    - text: Download - 下載
+      type: folder
+      cmnt: BitTorrent 即是常說的 種子＼ＢＴ下載
+      subi:
+        - {text: aria2, link: "https://aria2.github.io/", lice: GPL-2.0+, cmnt: 多協議命令行下載器，功能強大，高學習成本；但是，用會了就不會再考慮其他下載器了。,
+          refs: [{text: 小众软件, href: "https://www.appinn.com/aria2-in-windows-setup/"}]}
+        - {flag: [Abandon], text: Free Download Manager, link: "http://www.freedownloadmanager.org/", lice: Proprietary}
+        - {flag: [Abandon], text: BitTorrent, link: "http://www.bittorrent.com/", cmnt: 官方客戶端。, lice: Proprietary}
+        - {flag: [Abandon], text: μTorrent, link: "https://www.utorrent.com/", cmnt: 官方客戶端。, lice: Proprietary}
+        - {text: qBittorrent, link: "https://www.qbittorrent.org/", cmnt: 自由的 BitTorrent 客戶端，擁有可訂製的種子搜尋功能。, lice: GPL-2.0,
+           refs: [{text: PortableApps, href: "https://portableapps.com/apps/internet/qbittorrent_portable"},
+                  {text: 知乎, href: "https://www.zhihu.com/question/43640207/answer/202058150"}]}
+    - text: Email - 電子郵件
+      type: folder
+      subi:
+        - {text: Mozilla Thunderbird, link: "https://www.mozilla.org/en-US/thunderbird/all/", lice: MPL-2.0, cmnt: 與 Firefox 師出同門 Mozilla，老牌、自由的電郵軟體。}
+    - text: Remote Access - 遠端
+      type: folder
+      subi:
+        - {text: scrcpy, link: "https://github.com/Genymobile/scrcpy", cmnt: Android -> Windows 熒幕投影。, lice: Apache-2.0}
+        - {text: LocalSend, link: "https://localsend.org/", cmnt: 零配置、可靠的區域網路下跨平臺檔案分享。, lice: MIT}
+        - {text: Nearby Share Beta for Windows, link: "https://www.android.com/better-together/nearby-share-app/", cmnt: Android 原生跨平臺檔案分享。, lice: Proprietary}
+        - {text: WinSCP, link: "https://winscp.net/eng/index.php", cmnt: 遠端存儲（SFTP）客戶端。, lice: GPL-3.0+}
+        - {text: Cyberduck, link: "https://cyberduck.io/", cmnt: 遠端存儲客戶端，WinSCP 之前不支援新版 SSH 的時候找的替代。, lice: GPL-3.0}
+        - {flag: [Abandon], text: FileZilla, link: "https://filezilla-project.org/", cmnt: FTP 客戶端。, lice: GPL-2.0+}
+        - {text: PuTTY, link: "https://www.chiark.greenend.org.uk/~sgtatham/putty/", cmnt: 經典的 SSH 客戶端。, lice: MIT}
+        - {flag: [Pro], text: TigerVNC, link: "https://tigervnc.org/", cmnt: VNC 客戶端。, lice: GPL-2.0}
+        - {text: Chrome Remote Desktop, link: "https://remotedesktop.google.com/", cmnt: Google 出品，免費、快速、簡單的遠端桌面。, lice: Proprietary}
+        - {text: TeamViewer, link: "https://www.teamviewer.com/zhtw/", cmnt: 老牌遠端桌面。, lice: Proprietary, cost: paid}
+        - {flag: [Pro], text: RustDesk, link: "https://rustdesk.com/", cmnt: 遠端桌面（開發中）。, lice: AGPL-3.0}
+
+- text: Multimedia - 多媒體
+  type: folder
+  subi:
+    - text: Audio - 音訊
+      type: folder
+      subi:
+        - {text: foobar2000, link: "https://www.foobar2000.org/", cmnt: 音樂播放器，專業強大，需要調教。, lice: Proprietary}
+        - {text: AIMP, link: "http://www.aimp.ru/", cmnt: 類 Winamp，來自戰鬥民族的高顏值音樂播放器，支持換外觀。, lice: Proprietary}
+        - {text: MiniLyrics, link: "http://www.crintsoft.com/", cmnt: 為多種播放器自動下載並顯示歌詞。, lice: Proprietary}
+        - {text: Audacity, link: "https://www.audacityteam.org/", cmnt: 錄音，音訊剪輯、處理。, lice: GPL-2.0}
+    - text: Video - 視訊
+      type: folder
+      subi:
+        - {flag: [Pro], text: FFmpeg, link: "https://www.ffmpeg.org/", lice: GPL-2.0+}
+        - {flag: [Pro], text: mpv, link: "https://mpv.io/", cmnt: 播放器核心。, lice: GPL-2.0}
+        - {text: K-Lite Codec Pack, link: "http://www.codecguide.com/", cmnt: 播放器和編解碼器的軟體合集，專業、設定多、功能強大。, lice: FOSS}
+        - {text: VLC media player, link: "https://www.videolan.org/vlc/", cmnt: 支持多格式的跨平臺播放器，支持串流，支持換外觀。, lice: GPL-2.0}
+        - {text: 小丸工具箱, link: "http://maruko.appinn.me/", cmnt: 簡單易用的壓制工具。, lice: Proprietary}
+        - {text: Avidemux, link: "http://avidemux.org/", cmnt: 簡單的影片處理剪輯。, lice: GPL-2.0}
+        - {text: Open Broadcaster Software (OBS), link: "https://obsproject.com/", cmnt: 實況、直播串流、錄屏。, lice: GPL-2.0}
+        - {text: MKVToolNix, link: "https://mkvtoolnix.download/index.html", cmnt: MKV 打包解包工具。, lice: GPL-2.0}
+        - {text: Aegisub, link: "http://www.aegisub.org/", cmnt: 字幕時間軸。, lice: BSD-3-Clause}
+    - text: Image - 圖像
+      type: folder
+      subi:
+        - {flag: [Pro], text: ImageMagick, link: "https://imagemagick.org/index.php", lice: Apache-2.0}
+        - {text: nomacs, link: "https://nomacs.org/", cmnt: 輕量級圖片瀏覽器。, lice: GPL-3.0}
+        - {text: ImageGlass, link: "https://imageglass.org/", cmnt: 輕量級圖片瀏覽器。, lice: GPL-3.0}
+        - {text: IrfanView, link: "http://www.irfanview.com/", cmnt: 快速小巧且功能強大的圖片瀏覽器，不僅僅是看圖。, lice: Proprietary,
+           refs: [{text: 善用佳软, href: "https://xbeta.info/use-irfanview.htm"}]}
+        - {text: GifCam, link: "http://blog.bahraniapps.com/gifcam/", cmnt: GIF 錄屏，動圖生成。, lice: Proprietary}
+        - {text: ShareX, link: "https://getsharex.com/", cmnt: 截圖、分享、貼圖，功能強大。, lice: GPL-3.0}
+        - {text: Flameshot, link: "https://flameshot.org/", cmnt: 小巧的截圖工具。, lice: GPL-3.0}
+        - {flag: [Abandon], text: Snipaste, link: "https://zh.snipaste.com/", cmnt: 截圖 + 貼圖，功能強大，簡單易用。, lice: Proprietary}
+    - text: Comic Reader - 漫畫閱讀
+      type: folder
+      cmnt: 「漫畫」就是打包在一個壓縮檔裏面有一拖拉庫的圖片檔。
+      subi:
+        - {text: NeeView, link: https://bitbucket.org/neelabo/neeview/wiki/Home, cmnt: 漫畫閱讀器，觸控熒幕友善。, lice: MIT}
+        - {flag: [Abandon], text: ComicsViewer, link: "https://www.cnblogs.com/stronghorse/p/4913182.html", cmnt: 看漫畫。, lice: Proprietary}
+        - {text: YACReader, link: "https://www.yacreader.com/", cmnt: 漫畫閱讀、管理器。, lice: GPL-3.0}
+        - {text: Sumatra PDF, type: link, cmnt: 也可以看漫畫，觸屏友好，見 Office / PDF 章節。, lice: GPL-3.0}
+        - {text: Calibre, type: link, cmnt: 也可以看漫畫，見 Office / EPUB 章節。, lice: GPL-3.0}
+    - text: Creation - 創作
+      type: folder
+      subi:
+        - {flag: [Family], text: Adobe 全家桶, link: "http://www.adobe.com/", cmnt: 不二的選擇。, lice: Proprietary, cost: paid}
+        - {text: Blender, link: "https://www.blender.org/", cmnt: 著名 3D 創作軟體，還能剪影片。, lice: GPL-2.0}
+        - {text: GIMP, link: "https://www.gimp.org/", cmnt: 點陣圖編輯軟體，自由軟體界的 Photoshop。, lice: GPL-3.0+}
+        - {text: Inkscape, link: "https://inkscape.org/en/", cmnt: 矢量圖編輯軟體，自由軟體界的 Ai 或 CorelDRAW。, lice: GPL-2.0}
+        - {text: Krita, link: "https://krita.org/en/", cmnt: KDE 家族的繪圖軟體，自由軟體界的 SAI（？）。, lice: GPL-2.0}
+        - {flag: [Abandon], text: CLIP STUDIO, link: "http://www.clipstudio.net/", cmnt: 插畫、漫畫、動畫，日本動漫製作的業界標準。, lice: Proprietary, cost: paid}
+        - {flag: [Abandon], text: PaintTool SAI, link: "http://systemax.jp/ja/sai/", cmnt: 著名繪圖軟體，插畫、漫畫。, lice: Proprietary, cost: paid}
+        - {flag: [Abandon], text: MediBang Paint, link: "https://medibangpaint.com/", cmnt: 插畫、漫畫。, lice: Proprietary}
+
+- text: Embellish and Easy Access - 美化和便捷使用
+  type: folder
+  subi:
+    - {text: Macro Deck, link: "https://macrodeck.org/", cmnt: 讓任何觸控設備變成巨集鍵盤。, lice: Proprietary}
+    - {text: SSP, link: "https://ssp.shillest.net/", cmnt: 偽春菜（伺か）引擎。, lice: Proprietary}
+    - {text: Rainmeter, link: "https://www.rainmeter.net/", cmnt: 桌面小部件，系統美化的必備。, lice: GPL-2.0}
+    - {flag: [Discontinued], text: RocketDock, link: "https://rocketdock.com/", cmnt: 爲桌面添加 Mac 一樣的 Dock 工具。, lice: Proprietary,
+        subi: [{text: StackDocklet, link: "https://rocketdock.com/addon/docklets/47435", cmnt: 收納快捷方式，讓桌面更簡潔。, lice: Proprietary}]}
+    - {text: QTTabBar, link: "http://qttabbar.wikidot.com/", cmnt: 為檔案總管添加標籤頁功能。, lice: Proprietary,
+        refs: [{text: 小众软件, href: https://www.appinn.com/qt-tabbar/}]}
+    - {text: Carnac, link: "http://carnackeys.com/", cmnt: 在屏幕上顯示鍵盤輸入。, lice: MS-PL}
+    - {text: Wallpaper Engine, link: "http://store.steampowered.com/app/431960/Wallpaper_Engine/", cmnt: <del>整個桌布都是我的播放器，</del>可高度客製化的動態桌布。, lice: Proprietary, cost: paid}
+
+- text: Files - 檔案處理
+  type: folder
+  subi:
+    - {text: Syncthing, link: "https://syncthing.net/", cmnt: 自建置檔案同步。, lice: MPL-2.0}
+    - {text: Files, link: "https://files.community/", cmnt: 現代的檔案總管。, lice: MIT}
+    - {text: Git, link: "https://git-scm.com/", cmnt: 分佈式版本管理。, lice: GPL-2.0}
+    - {text: SpaceSniffer, link: "http://www.uderzo.it/main_products/space_sniffer/index.html", cmnt: 以「矩形式樹狀結構繪圖法」檢視硬碟佔用空間分佈。, lice: Proprietary}
+    - {text: WinMerge, link: "https://winmerge.org/", cmnt: 資料夾比較、同步。, lice: GPL-2.0}
+    - {text: dupeGuru, link: "https://dupeguru.voltaicideas.net/", cmnt: 尋找重複檔案。, lice: GPL-3.0}
+    - text: Compression - 壓縮
+      type: folder
+      subi:
+        - {text: 7-Zip, link: "http://www.7-zip.org/", cmnt: 7z 格式原生，高壓縮率。, lice: LGPL-2.1}
+        - {text: PeaZip, link: "http://www.peazip.org/", cmnt: 多格式支持。, lice: LGPL-3.0}
+        - {text: Bandizip, link: "https://www.bandisoft.com/bandizip/", cmnt: 多格式支持，方便的文字編碼轉換；v7 新版本免費添加廣告，<del>（可以退回 v6 版本或課金享受</del>。, lice: Proprietary, cost: paid}
+        - {text: WinRAR, link: "http://www.rarlab.com/download.htm", cmnt: RAR 格式原生，可添加恢復用冗餘。<del>（其實不要錢也能用）</del>, lice: Proprietary, cost: paid}
+    - text: Desktop Search - 桌面搜尋
+      type: folder
+      subi:
+        - {text: Everything, link: "https://www.voidtools.com/", cmnt: 超高速文件搜尋。, lice: MIT,
+           refs: [{text: 小众软件, href: "https://www.appinn.com/tag/everything/"}],
+           subi: [{text: EverythingToolbar, link: "https://github.com/stnkl/EverythingToolbar", cmnt: 把 Everything 放到工作列上。, lice: MIT}]}
+        - {text: Launchy, link: "http://www.launchy.net/", cmnt: 搜尋式啟動器，停止更新多年。, lice: GPL-2.0,
+           refs: [{text: 小众软件, href: "https://www.appinn.com/launchy/"}]}
+        - {text: ueli, link: "https://ueli.app", cmnt: 搜尋式啟動器。, lice: MIT}
+        - {text: CLaunch, link: "https://hp.vector.co.jp/authors/VA018351/en/claunch.html", cmnt: 圖標式啟動器。, lice: Proprietary,
+           refs: [{text: 本站, href: "https://undecv.github.io/posts/CLaunchZHTW.html#CLaunchZHTW"}]}
+
+- text: Security - 安全
+  type: folder
+  subi:
+    - {flag: [Abandon], text: Avast, link: "https://www.avast.com/zh-tw/index", cmnt: 來自捷克，免費防毒軟體。, lice: Proprietary}
+    - {flag: [Abandon], text: Avira, link: "https://www.avira.com/", cmnt: 來自德國，俗稱小紅傘，免費防毒軟體。, lice: Proprietary}
+    - {text: Eraser, link: "https://eraser.heidi.ie/", cmnt: FBI等級徹底地擦除檔案，幾乎無法被恢復。, lice: GPL-3.0}
+    - {text: VeraCrypt, link: "https://www.veracrypt.fr/", cmnt: TrueCrypt 傳承者，磁碟＼卷＼虛擬卷加密。, lice: Apache-2.0}
+    - {text: Gpg4win, link: "https://gpg4win.org/", cmnt: 用公＼私密鑰驗證、加密檔案和郵件。, lice: GPL-2.0}
+    - {text: VirtualBox, link: "https://www.virtualbox.org/", cmnt: 虛擬機器。, lice: GPL-2.0}
+    - {text: KeePassXC, link: "https://keepassxc.org/", cmnt: 密碼管理器。, lice: GPL-2.0}
+    - {flag: [Pro], text: OpenVPN Community, link: "https://openvpn.net/community-downloads/", cmnt: 虛擬網卡和自建置虛擬私人網路。, lice: GPL-2.0}
+    - {flag: [Pro], text: WireGuard, link: "https://www.wireguard.com/", cmnt: 自建置虛擬私人網路。, lice: GPL-2.0}
+    - {flag: [Pro], text: Wireshark, link: "https://www.wireshark.org/", cmnt: 網路分析工具。, lice: GPL-2.0}
+    - {flag: [Pro], text: Nmap, link: "https://nmap.org/", cmnt: 網路分析工具。, lice: GPL-2.0}
+
+- text: Office - 辦公室＼文書處理
+  type: folder
+  subi:
+    - text: PDF - 可攜式文件格式
+      type: folder
+      subi:
+        - {text: Adobe Acrobat Reader DC, link: "https://get.adobe.com/tw/reader/", cmnt: 原生 PDF 閱讀器。, lice: Proprietary}
+        - {text: Sumatra PDF, link: "https://www.sumatrapdfreader.org/free-pdf-reader.html", cmnt: 小巧快速的 PDF、電子書、漫畫閱讀器，觸屏友好。, lice: GPL-3.0}
+    - text: Database - 資料庫
+      type: folder
+      subi:
+        - {text: Memento Database, link: "https://mementodatabase.com/", cmnt: 強大易用的資料庫管理應用，配合 Android 版食用風味更加。, lice: Proprietary, cost: paid}
+    - text: Office suite - 辦公室套件
+      type: folder
+      subi:
+        - {text: LibreOffice, link: "https://www.libreoffice.org/", cmnt: 自由軟體界的 M$ Office。, lice: MPL-2.0}
+        - {text: OpenOffice.org, link: "http://www.openoffice.org/", cmnt: 自由軟體界的 M$ Office。, lice: GPL-3.0}
+    - text: Mind Map - 心智圖＼思維導圖
+      type: folder
+      subi:
+        - {text: Freeplane, link: "freeplane.sourceforge.net/", cmnt: 心智圖繪製軟體。, lice: GPL-2.0}
+        - {flag: [Abandon], text: FreeMind, link: "http://freemind.sourceforge.net/wiki/index.php/Main_Page", cmnt: 心智圖繪製軟體。, lice: GPL-2.0}
+    - text: Notes, Knowledge Base - 筆記＼知識庫
+      type: folder
+      subi:
+        - {text: Simplenote, link: "https://simplenote.com/", cmnt: Wordpress 出品，跨平臺同步。, lice: GPL-2.0}
+        - {text: Trilium Notes, link: "https://github.com/zadam/trilium", cmnt: 強大的知識庫，自建置（Self-Host）同步。, lice: AGPL-3.0}
+        - {text: Joplin, link: "https://joplinapp.org/", cmnt: 自建置（Self-Host）跨平臺同步。, lice: AGPL-3.0+}
+        - {text: Logseq, link: "https://logseq.com/", cmnt: 大綱式知識庫。, lice: AGPL-3.0}
+        - {text: Obsidian, link: "https://obsidian.md/", cmnt: 使用 Markdown 的知識庫。, lice: Proprietary}
+        - {text: TreeSheets, link: "https://strlen.com/treesheets/", cmnt: 自由格式的資料整理，表格、心智圖、大綱，功能強大。, lice: Zlib license}
+        - {text: Microsoft OneNote, link: "https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app", cmnt: Surface 上只能用它。, lice: Proprietary}
+        - {flag: [Abandon], text: Evernote, link: "https://evernote.com/", cmnt: 經典跨平臺同步筆記軟體。, lice: Proprietary}
+        - {flag: [Abandon], text: Typora, link: "https://typora.io/", cmnt: 端莊優雅的 Markdown 編輯器。, lice: Proprietary}
+    - text: EPUB
+      type: folder
+      subi:
+        - {text: Calibre, link: "https://calibre-ebook.com/", cmnt: 電子書書櫃、EPUB、漫畫閱讀器。, lice: GPL-3.0}
+        - {text: Sigil, link: "https://sigil-ebook.com/", cmnt: EPUB 編輯器。, lice: GPL-3.0}
+        - {text: Komga, link: "https://komga.org/", cmnt: 自建置漫畫圖書館。, lice: MIT}
+    - text: Text editor - 文本编辑器
+      type: folder
+      subi:
+        - {text: Notepad++, link: "https://notepad-plus-plus.org/zh/", cmnt: 純文字＼程式碼編輯器，代替記事本，從此再也不怕亂碼。, lice: GPL-2.0}
+        - {text: Visual Studio Code, link: "https://code.visualstudio.com/", cmnt: Microsoft 出品，Visual Studio 系列，純文字＼程式碼編輯器，強大的擴展性，假裝是編輯器的 IDE。, lice: MIT}
+    - text: Clipboard Manager - 剪貼板管理器
+      type: folder
+      subi:
+        - {text: CopyQ, link: "https://hluk.github.io/CopyQ/", cmnt: 強大的剪貼板管理器。, lice: GPL-3.0}
+        - {text: Ditto, link: "https://ditto-cp.sourceforge.io/", cmnt: 小巧的剪貼板管理器。, lice: GPL-3.0}
+
+- text: Languages - 語言
+  type: folder
+  subi:
+    - {text: RIME, link: "http://rime.im/", cmnt: 擊響中文之韻。中文輸入法引擎，支持注音、拼音、五筆等各種常見和不常見的輸入法，專業強大、跨平臺、自由度極高、可高度定製、校難上手。, lice: GPL-3.0}
+    - {text: Locale-Emulator, link: "https://github.com/xupefei/Locale-Emulator/releases", cmnt: 轉區工具。, lice: LGPL-3.0}
+    - {flag: [Discontinued], text: NTLEA, link: "https://ntlea.codeplex.com/", cmnt: 轉區工具。, lice: BSD-3-Clause}
+
+- text: Misc Utilities Application - 應用工具
+  type: folder
+  subi:
+    - {text: Zint, link: "https://zint.org.uk/", cmnt: 條碼生成器。, lice: BSD-3-Clause}
+    - {text: DevToys, link: "https://devtoys.app/", cmnt: 程式工程師的瑞士刀，編碼轉換、跳脫字串、圖片轉換等。, lice: MIT}
+    - {flag: [Pro, Family], text: JetBrains, link: "https://www.jetbrains.com/", cmnt: 現代的 IDE。, lice: Proprietary}
+    - {text: AutoHotkey, link: "https://autohotkey.com/", cmnt: 強大的自動化工具，需要一點寫手稿語言能力。, lice: GPL-2.0}
+    - {text: Cheat Engine, link: "https://cheatengine.org/index.php", cmnt: 通用遊戲記憶體修改器。, lice: APL-1.0}
+    - {text: EarTrumpet, link: "https://www.microsoft.com/en-us/p/eartrumpet/9nblggh516xp", cmnt: 給軟體指定聲音設備、控制音量，需要 Win10 1803 以上。, lice: MIT}
+    - {text: KDE Connect, link: "https://kdeconnect.kde.org/", tags: [區域網路], cmnt: KDE 家族，連接電腦和手機，同步通知、傳檔案、遙控器、簡報筆...。, lice: GPL-3.0}
+    - {text: Microsoft Garage Mouse without Borders, link: "https://www.microsoft.com/en-us/download/details.aspx?id=35460", tags: [區域網路], cmnt: 無縫在多台的電腦上分享切換一套鍵鼠。, lice: Proprietary}
+    - {text: Microsoft PowerToys, link: "https://docs.microsoft.com/en-us/windows/powertoys/", cmnt: Windows 官方出品，更靈活的視窗佈局、圖片改大小、批量改檔名等一大堆實用功能。, lice: MIT}
+    - {text: Pomotroid, link: "https://github.com/Splode/pomotroid/releases", cmnt: 簡潔、可換外觀的番茄工作法計時器。, lice: MIT}
+    - {flag: [Abandon, Discontinued], text: 弹窗广告拦截器, link: "https://www.zhihu.com/question/24265718/answer/27226434", cmnt: 如標題。, lice: Proprietary}
+    - {flag: [Family], text: Moo0 家族, link: "http://www.moo0.com/", cmnt: "45 款小巧實用的工具合集，好看易用。", lice: Proprietary}
+    - {flag: [Family], text: xiles 家族, link: "http://www.xiles.net/", cmnt: 簡單、精心設計和易於使用的軟體。, lice: Proprietary,
+       subi: [{text: nexusfile, cmnt: 檔案總管。, lice: Proprietary},
+              {text: nexusfont, cmnt: 字形瀏覽器。, lice: Proprietary},
+              {text: nexusimage, cmnt: 圖片瀏覽器。, lice: Proprietary}]}
+
+- text: System Utilities - 系統工具
+  type: folder
+  subi:
+    - {flag: [Pro], text: Windows Terminal, link: "https://docs.microsoft.com/en-us/windows/terminal/", cmnt: Windows 官方出品，現代、快速、高效的終端機（現已內建于 Win11）。, lice: MIT}
+    - {flag: [Abandon], text: SD Memory Card formatter, link: "https://www.sdcard.org/cht/downloads/formatter/index.html", cmnt: SD卡協會官方出品的格式化工具。, lice: Proprietary}
+    - {flag: [Family, Abandon], text: CCleaner 家族, link: "https://www.ccleaner.com/", cmnt: 現納入 Avast 旗下。, lice: Proprietary,
+       subi: [{text: CCleaner, link: "https://www.ccleaner.com/ccleaner", cmnt: 清垃圾。, lice: Proprietary},
+              {text: Defraggler, link: "https://www.ccleaner.com/defraggler", cmnt: 磁碟碎片重組。, lice: Proprietary},
+              {text: Recuva, link: "https://www.ccleaner.com/recuva", cmnt: 刪除文件恢復。, lice: Proprietary}]}
+    - {flag: [Family, Pro], text: Windows Sysinternals, link: "https://docs.microsoft.com/en-us/sysinternals/", lice: Proprietary}
+    - {flag: [Family], text: Crystal Disk, link: "https://crystalmark.info/en/software/", cmnt: 可愛的水晶雫幫你監測硬碟狀態。, lice: MIT,
+       subi: [{text: CrystalDiskInfo, cmnt: 硬碟狀態監測。, lice: MIT},
+              {text: CrystalDiskMark, cmnt: 硬碟讀寫測速。, lice: MIT}]}
+
+- text: Package Manager - 程式管家
+  type: folder
+  subi:
+  - {text: Steam, link: "http://store.steampowered.com/", cmnt: 數位發行平台，遊戲、軟體、影片、音樂..., lice: Proprietary}
+  - {text: PortableApps.com, link: "https://portableapps.com/", cmnt: 便攜軟體，使得軟體不依賴電腦。, lice: GPL-2.0+}
+  - {text: Chocolatey, link: "https://chocolatey.org/", cmnt: 軟體包管理器，Windows 的 apt 或 yum。, lice: Apache-2.0}
