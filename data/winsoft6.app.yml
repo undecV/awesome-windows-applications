@@ -38,6 +38,13 @@ contents:
     name: Network - 網路
     id: network
     contents:
+      - publisher: Sniffnet
+        name: Sniffnet
+        price: free
+        license: [Apache-2.0, MIT]
+        comment: 網路流量監視器。
+        notes: 需要 Npcap 前置。
+        links: [{class: homepage, href: "https://sniffnet.net/"}]
       - publisher: Ashfaaq18
         name: OpenNetMeter
         price: free
@@ -247,7 +254,7 @@ contents:
           - publisher: BlenderFoundation
             name: Blender
             type: link
-            refer: blender
+            refer: BlenderFoundation-Blender
             comment: 是的你沒看錯，3D 軟體可以剪輯影片。
           - publisher: Avidemux
             name: Avidemux
@@ -281,7 +288,15 @@ contents:
             comment: 小丸工具箱。簡單易用的壓制工具。
             note: 本質是 FFmpeg 指令解釋器（？
             links: [{class: homepage, href: "http://maruko.appinn.me/"}]
-
+          - publisher: Ruffle
+            name: Ruffle
+            price: free
+            license: [Proprietary]
+            comment: Adobe Flash (SWF) 播放器，Adobe Flash Player 的精神延續。
+            links: 
+              - {class: homepage, href: "https://ruffle.rs/"}
+              - {class: github, href: "https://github.com/ruffle-rs/ruffle"}
+            install: [{class: winget, content: "winget install -e --id Ruffle.Ruffle.Nightly"}]
 
   - name: Image - 圖像
     id: image
@@ -382,7 +397,7 @@ contents:
         links: [{class: homepage, href: "http://www.adobe.com/"}]
       - publisher: BlenderFoundation
         name: Blender
-        id: blender
+        id: BlenderFoundation-Blender
         price: free
         tags: [專業]
         license: [GPL-3.0-or-later]
@@ -649,6 +664,14 @@ contents:
         comment: 網路分析工具。
         links: [{class: homepage, href: "https://nmap.org/"}]
         install: [{class: winget, content: "winget install -e --id Insecure.Nmap"}]
+      - publisher: Insecure
+        name: Npcap
+        price: free
+        id: Insecure-Npcap
+        license: [Proprietary]
+        tags: [專業]
+        comment: 擷取網路流量的工具。
+        links: [{class: homepage, href: "https://npcap.com/"}]
   - name: Office - 辦公室／文書處理
     id: office
     type: folder
@@ -1179,7 +1202,7 @@ contents:
         price: free
         license: [GPL-2.0]
         comment: 不只是 Hex 編輯器，還是逆向分析工具。
-        links: [{class: homepage, href: "https://pencil.evolus.vn/"}]
+        links: [{class: github, href: "https://github.com/WerWolv/ImHex"}]
         install: [{class: winget, content: "winget install -e --id WerWolv.ImHex"}]
       - publisher: Evolus
         name: Pencil
@@ -1188,6 +1211,13 @@ contents:
         comment: 繪製軟體草圖（mockups）。
         links: [{class: homepage, href: "https://pencil.evolus.vn/"}]
         install: [{class: winget, content: "winget install -e --id Evolus.Pencil"}]
+      - publisher: Docker
+        name: DockerDesktop
+        price: free
+        license: [Proprietary]
+        comment: Docker，但是在 Windows 上。
+        links: [{class: homepage, href: "https://www.docker.com/"}]
+        install: [{class: winget, content: "winget install -e --id Docker.DockerDesktop"}]
       - publisher: JetBrains
         name: JetBrains 全家桶
         price: free
