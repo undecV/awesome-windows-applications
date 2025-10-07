@@ -1,0 +1,13 @@
+[project]
+name = "awesome-windows-applications"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "jinja2>=3.1.6",
+    "minify-html>=0.16.4",
+    "pyyaml>=6.0.3",
+    "types-pyyaml>=6.0.12.20250915",
+    "tzdata>=2025.2",
+]
