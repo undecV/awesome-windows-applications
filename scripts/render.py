@@ -1,3 +1,4 @@
+import re
 import logging
 from pathlib import Path
 from datetime import datetime
@@ -19,12 +20,22 @@ data = yaml.safe_load(data_file_path.read_text(encoding="utf-8"))
 
 log.debug("Loading template.")
 
+def sanitize_id(value: str) -> str:
+    """將輸入清洗成安全的 HTML id 格式"""
+    if not value:
+        return ""
+
+    value = value.strip().lower()
+    value = re.sub(r'[<>#"%{}|\\^~\[\]`;/?:@=&]', '', value)
+    value = re.sub(r'\s+', '_', value)
+    return value
+
 env = Environment(
     loader=FileSystemLoader("templates"),
     trim_blocks=True,
     lstrip_blocks=True
 )
-
+env.filters["sanitize_id"] = sanitize_id
 template = env.get_template("winsoft.html.j2")
 
 log.debug("rendering page.")
