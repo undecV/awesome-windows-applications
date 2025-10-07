@@ -49,7 +49,7 @@ before_size = len(html.encode("utf-8"))
 
 log.debug("Compressing page.")
 
-minified = minify(html)
+minified = minify(html, minify_css=True, minify_js=True)
 
 after_size = len(minified.encode("utf-8"))
 compression_ratio = (1 - after_size / before_size) * 100
