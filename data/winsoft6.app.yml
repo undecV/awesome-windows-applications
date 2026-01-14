@@ -1,9 +1,9 @@
-# yaml-language-server: $schema=./schemas/awesome-application-6.schema.json
+# yaml-language-server: $schema=../schemas/awesome-application-6.schema.json
 
 meta: {}
 contents:
-  - type: folder
-    name: Web Browser - 網路瀏覽器
+  - name: Web Browser - 網路瀏覽器
+    type: folder
     id: browser
     contents:
       - publisher: Mozilla
@@ -22,7 +22,7 @@ contents:
         price: free
         license: [Proprietary]
         comment: 御三家之版本解答。
-        links: 
+        links:
           - {class: homepage, href: "https://www.google.com/chrome/"}
           - {class: chrome, href: "https://chromewebstore.google.com/"}
         install: [{class: winget, content: "winget install -e --id Google.Chrome"}]
@@ -34,8 +34,8 @@ contents:
         comment: 御三家之已經內建。
         links: [{class: homepage, href: "https://www.microsoft.com/edge"}]
         install: [{class: winget, content: "winget install -e --id Microsoft.Edge"}]
-  - type: folder
-    name: Network - 網路
+  - name: Network - 網路
+    type: folder
     id: network
     contents:
       - publisher: Sniffnet
@@ -60,114 +60,179 @@ contents:
           {class: homepage, href: "https://www.glasswire.com/"},
         ]
         install: [{class: winget, content: "winget install -e --id GlassWire.GlassWire"}]
-      - publisher: aria2
-        name: aria2
-        price: free
-        tags: [硬核, 命令列工具]
-        license: [GPL-2.0]
-        comment: 多協議命令行下載器，功能強大，高學習成本；但是，用會了就不會再考慮其他下載器了。
-        note: 或者，你可以看看用它作為核心的前端。
-        links:
-          - {class: homepage, href: "https://aria2.github.io/"}
-          - {class: github, href: "https://github.com/aria2/aria2"}
-        install: [{class: winget, content: "winget install -e --id aria2.aria2"}]
-      - publisher: GiantPinkRobots
-        name: Varia
-        price: free
-        license: [MPL-2.0]
-        comment: 使用 Aria2 作為核心的下載器，有完整瀏覽器擴充套件支援。
-        links:
-          - {class: github, href: "https://github.com/giantpinkrobots/varia/"}
-        install: [{class: winget, content: "winget install -e --id GiantPinkRobots.Varia"}]
-      - publisher: JDownloader
-        name: JDownloader
-        price: free
-        license: [GPL-3.0]
-        comment: 支援眾多免費空間（免空）的下載器。
-        links: [{class: homepage, href: "https://jdownloader.org/"}]
-      - publisher: qBittorrent
-        name: qBittorrent
-        price: free
-        license: [GPL-2.0]
-        comment: 自由的 BitTorrent 客戶端，擁有可訂製的種子搜尋功能。
-        links: [{class: homepage, href: "https://www.qbittorrent.org/"}]
-        install: [{class: winget, content: "winget install -e --id qBittorrent.qBittorrent"}]
-  - type: folder
-    name: Remote Access - 遠端
+      - name: Downloader - 下載器
+        type: folder
+        id: downloader
+        contents:
+        - publisher: aria2
+          name: aria2
+          price: free
+          tags: [硬核, 命令列工具]
+          license: [GPL-2.0]
+          comment: 多協議命令行下載器，功能強大，高學習成本；但是，用會了就不會再考慮其他下載器了。
+          note: 或者，你可以看看用它作為核心的前端。
+          links:
+            - {class: homepage, href: "https://aria2.github.io/"}
+            - {class: github, href: "https://github.com/aria2/aria2"}
+          install: [{class: winget, content: "winget install -e --id aria2.aria2"}]
+        - publisher: GiantPinkRobots
+          name: Varia
+          price: free
+          license: [MPL-2.0]
+          comment: 使用 Aria2 作為核心的下載器，有完整瀏覽器擴充套件支援。
+          links:
+            - {class: github, href: "https://github.com/giantpinkrobots/varia/"}
+          install: [{class: winget, content: "winget install -e --id GiantPinkRobots.Varia"}]
+        - publisher: qBittorrent
+          name: qBittorrent
+          price: free
+          license: [GPL-2.0]
+          comment: 自由的 BitTorrent 客戶端，擁有可訂製的種子搜尋功能。
+          links: [{class: homepage, href: "https://www.qbittorrent.org/"}]
+          install: [{class: winget, content: "winget install -e --id qBittorrent.qBittorrent"}]
+        - publisher: JDownloader
+          name: JDownloader
+          price: free
+          license: [GPL-3.0]
+          comment: 支援眾多免費空間（免空）的下載器。
+          links: [{class: homepage, href: "https://jdownloader.org/"}]
+  - name: Remote Access - 遠端存取
+    type: folder
+    comment: 一臺電腦不夠的話...那就兩臺！
     id: remote
     contents:
-      - publisher: Genymobile
-        name: scrcpy
-        price: free
-        tags: [硬核]
-        license: [Apache-2.0]
-        comment: Android -> Windows 螢幕有線、無線投影。建議找一個好用的前端搭配使用。
-        links: [{class: github, href: "https://github.com/Genymobile/scrcpy"}]
-        install: [{class: winget, content: "winget install -e --id Genymobile.scrcpy"}]
-      - publisher: LocalSend
-        name: LocalSend
-        price: free
-        license: [Apache-2.0]
-        comment: 零配置、可靠的區域網路下跨平臺檔案分享。
-        links: [{class: homepage, href: "https://localsend.org/"}]
-        install: [{class: winget, content: "winget install -e --id LocalSend.LocalSend"}]
-      - publisher: Android
-        name: Quick Share
-        price: free
-        license: [Proprietary]
-        comment: Android 內建分享工具，現也支援 Windows。
-        links: [{class: homepage, href: "https://www.android.com/better-together/quick-share-app/"}]
-      - publisher: WinSCP
-        name: WinSCP
-        price: free
-        license: [GPL-3.0-or-later]
-        comment: 經典的 SFTP、FTP、WebDAV、S3、和 SCP 遠端檔案存取客戶端。
-        links: [{class: homepage, href: "https://winscp.net/"}]
-        install: [{class: winget, content: "winget install -e --id WinSCP.WinSCP"}]
-      - publisher: PuTTY
-        name: PuTTY
-        price: free
-        license: [MIT]
-        comment: 經典的 SSH 客戶端。
-        links: [{class: homepage, href: "https://www.chiark.greenend.org.uk/~sgtatham/putty/"}]
-        install: [{class: winget, content: "winget install -e --id PuTTY.PuTTY"}]
-      - publisher: KDE
-        name: KDE Connect
-        price: free
-        license: [GPL-3.0]
-        comment: 內網下的手機電腦跨界協作工具，替代內建「手機」應用。KDE 家族，連接電腦和手機，同步通知、傳檔案、遙控器、簡報筆...。（講道理設定有一定複雜度。）
-        links: [{class: homepage, href: "https://kdeconnect.kde.org/"}]
-        install: [{class: winget, content: "winget install -e --id KDE.KDEConnect"}]
-      - publisher: Microsoft Garage
-        name: Mouse without Borders
-        type: link
-        refer: ms-powertoys
-        comment: 內網無縫在多台的電腦上分享切換一套鍵鼠（Software KVM）。現已加入 PowerToys 全家桶。
-        license: [Proprietary]
-        links: [{class: homepage, href: "https://www.microsoft.com/en-us/download/details.aspx?id=35460"}]
-      - publisher: Google
-        name: Chrome Remote Desktop
-        price: free
-        license: [Proprietary]
-        tags: [網頁應用]
-        comment: 遠端桌面。需要綁定 Google 賬號，無需客戶端。
-        links: 
-          - {class: homepage, href: "https://remotedesktop.google.com/"}
-          - {class: chrome, href: https://chromewebstore.google.com/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai}
-      - publisher: RustDesk
-        name: RustDesk
-        price: freemium
-        license: [AGPL-3.0]
-        comment: 遠端桌面。TeamViewer 的本地化替代。提供自己架設伺服器。
-        links: [{class: homepage, href: "https://rustdesk.com/"}]
-        install: [{class: winget, content: "winget install -e --id RustDesk.RustDesk"}]
-      - publisher: uvncbvba
-        name: UltraVNC
-        price: free
-        license: [GPL-3.0]
-        comment: 老牌遠端桌面。
-        links: [{class: homepage, href: "https://uvnc.com/"}]
-        install: [{class: winget, content: "winget install -e --id uvncbvba.UltraVNC"}]
+      - name: Cross-Device Integration - 跨裝置整合
+        id: cross-device
+        type: folder
+        contents:
+        - publisher: KDE
+          name: KDE Connect
+          price: free
+          license: [GPL-3.0]
+          comment: 內網下的手機、電腦跨界協作工具，替代內建「手機（Phone Link）」應用。KDE 家族。可以連接電腦和手機，同步通知、傳檔案、遙控器、簡報筆...，甚至連接電腦和電腦、手機和手機。
+          links: [{class: homepage, href: "https://kdeconnect.kde.org/"}]
+          install: [{class: winget, content: "winget install -e --id KDE.KDEConnect"}]
+        - publisher: Genymobile
+          name: scrcpy
+          price: free
+          tags: [硬核]
+          license: [Apache-2.0]
+          comment: Android -> Windows 螢幕有線、無線投影。建議找一個好用的前端搭配使用。
+          links: [{class: github, href: "https://github.com/Genymobile/scrcpy"}]
+          install: [{class: winget, content: "winget install -e --id Genymobile.scrcpy"}]
+        - publisher: LocalSend
+          name: LocalSend
+          price: free
+          license: [Apache-2.0]
+          comment: 零配置、可靠的區域網路下跨平臺檔案分享。
+          links: [{class: homepage, href: "https://localsend.org/"}]
+          install: [{class: winget, content: "winget install -e --id LocalSend.LocalSend"}]
+        - publisher: Android
+          name: Quick Share
+          price: free
+          license: [Proprietary]
+          comment: Android 內建分享工具，現也支援 Windows。
+          links: [{class: homepage, href: "https://www.android.com/better-together/quick-share-app/"}]
+      - name: KVM - 多電腦切換器
+        id: remote-kvm
+        comment: 用同一套鍵盤、螢幕、滑鼠（Keyboard, Video, Mouse; KVM）控制多臺電腦。
+        type: folder
+        contents:
+        - publisher: Microsoft Garage
+          name: Mouse without Borders
+          type: link
+          refer: ms-powertoys
+          comment: 內網無縫在多台的電腦上分享切換一套鍵鼠（Software KVM）。現已加入 PowerToys 全家桶。
+          license: [Proprietary]
+          links: [{class: homepage, href: "https://www.microsoft.com/en-us/download/details.aspx?id=35460"}]
+      - name: Remote Desktop - 遠端桌面
+        id: remote-desktop
+        comment: 在電腦上顯示另外一臺電腦的桌面。
+        type: folder
+        contents:
+        - publisher: uvncbvba
+          name: UltraVNC
+          price: free
+          license: [GPL-3.0]
+          comment: 老牌遠端桌面。
+          links: [{class: homepage, href: "https://uvnc.com/"}]
+          install: [{class: winget, content: "winget install -e --id uvncbvba.UltraVNC"}]
+        - publisher: RustDesk
+          name: RustDesk
+          price: freemium
+          license: [AGPL-3.0]
+          comment: 遠端桌面。TeamViewer 的本地化替代。提供自己架設伺服器。
+          links: [{class: homepage, href: "https://rustdesk.com/"}]
+          install: [{class: winget, content: "winget install -e --id RustDesk.RustDesk"}]
+        - publisher: Google
+          name: Chrome Remote Desktop
+          price: free
+          license: [Proprietary]
+          tags: [網頁應用]
+          comment: 遠端桌面。需要綁定 Google 賬號，無需客戶端。
+          links:
+            - {class: homepage, href: "https://remotedesktop.google.com/"}
+            - {class: chrome, href: https://chromewebstore.google.com/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai}
+      - name: Moonlight - 遊戲串流
+        id: moonlight
+        comment: |
+          NVIDIA GameStream 是被 Nvidia 棄養、又被社群領養變成 Moonlight 的遊戲串流協定。<br />
+          遊戲串流是在「客戶端」電腦上玩「伺服端」電腦上的遊戲。
+        type: folder
+        contents:
+          - publisher: MoonlightGameStreamingProject
+            name: Moonlight
+            price: free
+            license: [GPL-3.0]
+            comment: 遊戲串流「客戶端（Client）」裝在要玩的那臺電腦上。
+            links:
+              - {class: homepage, href: "https://moonlight-stream.org/"}
+              - {class: github, href: "https://github.com/moonlight-stream/"}
+            install: [{class: winget, content: "winget install -e --id MoonlightGameStreamingProject.Moonlight"}]
+          - publisher: LizardByte
+            name: Sunshine
+            price: free
+            license: [GPL-3.0]
+            comment: 遊戲串流「伺服端（Server）」裝在有遊戲的那臺電腦上。
+            links:
+              - {class: homepage, href: "http://app.lizardbyte.dev/Sunshine/"}
+              - {class: github, href: "https://github.com/LizardByte/Sunshine"}
+            install: [{class: winget, content: "winget install -e --id LizardByte.Sunshine"}]
+          - publisher: Nefarius
+            name: HidHide
+            price: free
+            license: [MIT]
+            comment: 遊戲手把裝置防火牆。內建手把第三方驅動程式。Sunshine 需要它支援手把。
+            links:
+              - {class: homepage, href: "https://docs.nefarius.at/projects/HidHide/"}
+              - {class: github, href: "https://github.com/nefarius/HidHide"}
+            install: [{class: winget, content: "winget install -e --id Nefarius.HidHide"}]
+      - name: SSH / FTP - 經典協定
+        id: remote-ssh
+        type: folder
+        comment: 經典的遠端命令列和檔案傳輸協定伺服＼客戶端。
+        contents:
+        - publisher: WinSCP
+          name: WinSCP
+          price: free
+          license: [GPL-3.0-or-later]
+          comment: 經典的 SFTP、FTP、WebDAV、S3、和 SCP 遠端檔案存取客戶端。
+          links: [{class: homepage, href: "https://winscp.net/"}]
+          install: [{class: winget, content: "winget install -e --id WinSCP.WinSCP"}]
+        - publisher: PuTTY
+          name: PuTTY
+          price: free
+          license: [MIT]
+          comment: 經典的 SSH 客戶端。
+          links: [{class: homepage, href: "https://www.chiark.greenend.org.uk/~sgtatham/putty/"}]
+          install: [{class: winget, content: "winget install -e --id PuTTY.PuTTY"}]
+        - publisher: OpenBSD
+          name: OpenSSH
+          price: free
+          license: [SSH-OpenSSH]
+          tags: ["內建在 Windows", "命令列工具"]
+          comment: 經典的 SSH 客戶端。
+          links: [{class: homepage, href: "https://www.openssh.com/"}]
   - name: Audio - 音訊
     id: audio
     comment: 我知道現在是串流音樂的時代了，但…
@@ -207,7 +272,7 @@ contents:
         tags: [硬核]
         license: [GPL-2.0]
         comment: 超強大播放器核心。需要外掛讓你便利使用。
-        links: 
+        links:
           - {class: homepage, href: "https://mpv.io/"}
           - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/make_surface_great_again/mpv-touch-gestures/"}
         install: [{class: scoop, content: "scoop install extras/mpv"}]
@@ -232,6 +297,15 @@ contents:
         comment: 支持多格式的跨平臺播放器，支持串流，支持換外觀。
         links: [{class: homepage, href: "https://www.videolan.org/vlc/"}]
         install: [{class: winget, content: "winget install -e --id VideoLAN.VLC"}]
+      - publisher: Ruffle
+        name: Ruffle
+        price: free
+        license: [Proprietary]
+        comment: Adobe Flash (SWF) 播放器，Adobe Flash Player 的精神延續。
+        links:
+          - {class: homepage, href: "https://ruffle.rs/"}
+          - {class: github, href: "https://github.com/ruffle-rs/ruffle"}
+        install: [{class: winget, content: "winget install -e --id Ruffle.Ruffle.Nightly"}]
       - name: Video Editing - 影片編輯
         id: video-editing
         type: folder
@@ -254,7 +328,7 @@ contents:
           - publisher: BlenderFoundation
             name: Blender
             type: link
-            refer: BlenderFoundation-Blender
+            refer: blenderfoundation-blender
             comment: 是的你沒看錯，3D 軟體可以剪輯影片。
           - publisher: Avidemux
             name: Avidemux
@@ -288,16 +362,6 @@ contents:
             comment: 小丸工具箱。簡單易用的壓制工具。
             note: 本質是 FFmpeg 指令解釋器（？
             links: [{class: homepage, href: "http://maruko.appinn.me/"}]
-          - publisher: Ruffle
-            name: Ruffle
-            price: free
-            license: [Proprietary]
-            comment: Adobe Flash (SWF) 播放器，Adobe Flash Player 的精神延續。
-            links: 
-              - {class: homepage, href: "https://ruffle.rs/"}
-              - {class: github, href: "https://github.com/ruffle-rs/ruffle"}
-            install: [{class: winget, content: "winget install -e --id Ruffle.Ruffle.Nightly"}]
-
   - name: Image - 圖像
     id: image
     comment: 我知道現在內建的圖片瀏覽器已經很好用了，但…
@@ -323,7 +387,7 @@ contents:
         price: free
         license: [GPL-3.0]
         comment: 輕量級圖片瀏覽器。
-        links: 
+        links:
           - {class: homepage, href: "https://nomacs.org/"}
           - {class: github, href: "https://github.com/nomacs/nomacs"}
         install: [{class: winget, content: "winget install -e --id nomacs.nomacs"}]
@@ -334,26 +398,30 @@ contents:
         comment: 快速小巧且功能強大的圖片瀏覽器。
         links: [{class: homepage, href: "https://www.irfanview.com/"}]
         install: [{class: winget, content: "winget install -e --id IrfanSkiljan.IrfanView"}]
-      - publisher: BahraniApps
-        name: GifCam
-        price: free
-        license: [Proprietary]
-        comment: 無需安裝的小巧 GIF 錄屏、編輯工具。
-        links: [{class: homepage, href: "http://blog.bahraniapps.com/gifcam/"}]
-      - publisher: ShareX
-        name: ShareX
-        price: free
-        license: [GPL-3.0]
-        comment: 截圖、編輯、分享流水線式一鍵完成，功能強大。
-        links: [{class: homepage, href: "https://getsharex.com/"}]
-        install: [{class: winget, content: "winget install -e --id ShareX.ShareX"}]
-      - publisher: Flameshot
-        name: Flameshot
-        price: free
-        license: [GPL-3.0]
-        comment: 小巧的截圖工具。
-        links: [{class: homepage, href: "https://flameshot.org"}]
-        install: [{class: winget, content: "winget install -e --id Flameshot.Flameshot"}]
+      - name: Screenshot - 螢幕截圖
+        id: screenshot
+        type: folder
+        contents:
+        - publisher: BahraniApps
+          name: GifCam
+          price: free
+          license: [Proprietary]
+          comment: 無需安裝的小巧 GIF 錄屏、編輯工具。
+          links: [{class: homepage, href: "http://blog.bahraniapps.com/gifcam/"}]
+        - publisher: ShareX
+          name: ShareX
+          price: free
+          license: [GPL-3.0]
+          comment: 截圖、編輯、分享流水線式一鍵完成，功能強大。
+          links: [{class: homepage, href: "https://getsharex.com/"}]
+          install: [{class: winget, content: "winget install -e --id ShareX.ShareX"}]
+        - publisher: Flameshot
+          name: Flameshot
+          price: free
+          license: [GPL-3.0]
+          comment: 小巧的截圖工具。
+          links: [{class: homepage, href: "https://flameshot.org"}]
+          install: [{class: winget, content: "winget install -e --id Flameshot.Flameshot"}]
       - name: Comic Reader - 漫畫閱讀器
         id: comic
         comment: 「漫畫」就是打包在一個壓縮檔裏面有一拖拉庫的圖片檔。
@@ -397,13 +465,21 @@ contents:
         links: [{class: homepage, href: "http://www.adobe.com/"}]
       - publisher: BlenderFoundation
         name: Blender
-        id: BlenderFoundation-Blender
+        id: blenderfoundation-blender
         price: free
         tags: [專業]
         license: [GPL-3.0-or-later]
         comment: 著名 3D 創作軟體，還能剪影片。
         links: [{class: homepage, href: https://www.blender.org/}]
         install: [{class: winget, content: "winget install -e --id BlenderFoundation.Blender"}]
+      - publisher: Figma
+        name: Figma
+        price: freemium
+        tags: [專業]
+        license: [Proprietary]
+        comment: 雲端協作的 UI/UX 設計工具，也可以做平面設計。
+        links: [{class: homepage, href: https://www.figma.com/}]
+        install: [{class: winget, content: "winget install -e --id Figma.Figma"}]
       - publisher: Darktable
         name: Darktable
         price: free
@@ -436,7 +512,6 @@ contents:
         comment: KDE 家族的繪圖軟體，自由軟體界的 SAI。
         links: [{class: homepage, href: "https://krita.org/"}]
         install: [{class: winget, content: "winget install -e --id KDE.Krita"}]
-
   - name: Embellish and Easy Access - 美化和便捷使用
     id: embellish
     type: folder
@@ -446,7 +521,7 @@ contents:
         price: paid
         license: [Proprietary]
         comment: <del>整個桌布都是我的播放器，</del>可高度客製化的動態桌布。
-        links: 
+        links:
          - {class: homepage, href: "https://www.wallpaperengine.io"}
          - {class: steam, href: "http://store.steampowered.com/app/431960/Wallpaper_Engine/"}
       - publisher: MacroDeck
@@ -571,7 +646,7 @@ contents:
             price: free
             license: [Proprietary]
             comment: 圖標式啟動器。
-            links: 
+            links:
               - {class: homepage, href: "https://ss1.xrea.com/pyonkichi.g1.xrea.com/en/claunch.html"}
               - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/desktop-search-and-claunch-zh-tw/"}
             install: [{class: winget, content: "winget install -e --id Pyonkichi.CLaunch"}]
@@ -580,7 +655,7 @@ contents:
             price: free
             license: [MIT]
             comment: 搜尋式啟動器。
-            links: 
+            links:
               - {class: homepage, href: "https://ueli.app"}
               - {class: github, href: "https://github.com/oliverschwendener/ueli"}
               - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/desktop-search-and-claunch-zh-tw/"}
@@ -667,7 +742,7 @@ contents:
       - publisher: Insecure
         name: Npcap
         price: free
-        id: Insecure-Npcap
+        id: insecure-npcap
         license: [Proprietary]
         tags: [專業]
         comment: 擷取網路流量的工具。
@@ -701,7 +776,7 @@ contents:
         price: freemium
         license: [Proprietary]
         comment: 強大易用的跨平臺資料庫管理應用，配合 Android 版食用風味更加。
-        links: 
+        links:
           - {class: homepage, href: "https://mementodatabase.com/"}
           - {class: google-play, href: "https://play.google.com/store/apps/details?id=com.luckydroid.droidbase"}
           - {class: apple-app-store, href: "https://apps.apple.com/us/app/memento-database/id1583610478"}
@@ -714,35 +789,13 @@ contents:
         comment: 繪製圖表。曾經叫做 <code>draw.io</code>，現在叫做 <code>diagrams.net</code>。
         note: 也可以看看把它整合到 VSCode 中的擴充套件。
         links: [{class: homepage, href: "https://app.diagrams.net"}]
-      - publisher: Overleaf
-        name: Overleaf
-        price: freemium
-        license: [Proprietary]
-        tags: [網頁應用]
-        comment: LaTeX 協作同步編輯。
-        note: 快來看看生產學術垃圾的機器！
-        links: [{class: homepage, href: "https://www.overleaf.com/"}]
-      - publisher: Adobe
-        name: Acrobat Reader DC
-        price: freemium
-        license: [Proprietary]
-        comment: 本家，PDF 是 Adobe 發明的，這就是原生 PDF 閱讀器。
-        links: [{class: homepage, href: "https://get.adobe.com/tw/reader/"}]
-        install: [{class: winget, content: "winget install -e --id XPDP273C0XHQH2 -s msstore"}]
-      - publisher: PDF Arranger
-        name: PDF Arranger
+      - publisher: Mermaid
+        name: Mermaid
         price: free
-        license: [GPL-3.0]
-        comment: 小巧快速的 PDF 整並、拆分、旋轉、裁切、排序、提取 等功能。
-        links: [{class: github, href: "https://github.com/pdfarranger/pdfarranger"}]
-      - publisher: SumatraPDF
-        name: SumatraPDF
-        id: sumatrapdf
-        price: free
-        license: [GPL-3.0]
-        comment: 小巧快速的 PDF、電子書,也可以看漫畫，觸控螢幕友好。
-        links: [{class: homepage, href: "https://www.sumatrapdfreader.org/"}]
-        install: [{class: winget, content: "winget install -e --id SumatraPDF.SumatraPDF"}]
+        license: [MIT]
+        comment: 用純文字繪製圖表。
+        note: 也可以看看把它整合到 VSCode、Markdown 中的擴充套件。
+        links: [{class: homepage, href: "https://mermaid.js.org/"}]
       - publisher: Scribus
         name: Scribus
         price: free
@@ -750,14 +803,6 @@ contents:
         comment: 開源排版工具。
         links: [{class: homepage, href: "https://www.sumatrapdfreader.org/"}]
         install: [{class: winget, content: "winget install -e --id Scribus.Scribus"}]
-      - publisher: Ghostscript
-        name: Ghostscript
-        price: free
-        license: [GPL-2.0-or-later]
-        tags: [命令列工具]
-        comment: PDF 轉檔工具。
-        note: 通常是被別的軟體需要。
-        links: [{class: homepage, href: "https://ghostscript.com/"}]
       - publisher: Zint
         name: Zint
         price: free
@@ -773,6 +818,69 @@ contents:
         comment: 算賬軟體，據說職業會計看了它都直呼專業（？
         links: [{class: homepage, href: "https://www.gnucash.org/"}]
         install: [{class: winget, content: "winget install -e --id GnuCash.GnuCash"}]
+      - name: TeX - 學術排版
+        id: office-tex
+        type: folder
+        comment: <del>學術垃圾的產地（不是</del>
+        contents:
+        - publisher: MiKTeX
+          name: MiKTeX
+          price: free
+          license: [FOSS]
+          comment: Windows 上的 LaTeX，擴充套件隨用隨裝。
+          links:
+          - {class: homepage, href: "https://miktex.org/"}
+          - {class: homepage, href: "https://github.com/MiKTeX/miktex"}
+          install: [{class: winget, content: "winget install -e --id MiKTeX.MiKTeX"}]
+        - publisher: TUG
+          name: TeX Live
+          price: free
+          license: [LPPL-1.3c]
+          comment: LaTeX 世界的完整發行版。
+          links:
+          - {class: homepage, href: "https://www.tug.org/texlive/"}
+          install: [{class: winget, content: "winget install -e --id MiKTeX.MiKTeX"}]
+        - publisher: Overleaf
+          name: Overleaf
+          price: freemium
+          license: [Proprietary]
+          tags: [網頁應用]
+          comment: LaTeX 協作同步編輯。
+          links: [{class: homepage, href: "https://www.overleaf.com/"}]
+      - name: PDF - 可攜格式
+        id: office-pdf
+        type: folder
+        contents:
+        - publisher: Adobe
+          name: Acrobat Reader DC
+          price: freemium
+          license: [Proprietary]
+          comment: 本家，PDF 是 Adobe 發明的，這就是原生 PDF 閱讀器。
+          links: [{class: homepage, href: "https://get.adobe.com/tw/reader/"}]
+          install: [{class: winget, content: "winget install -e --id XPDP273C0XHQH2 -s msstore"}]
+        - publisher: SumatraPDF
+          name: SumatraPDF
+          id: sumatrapdf
+          price: free
+          license: [GPL-3.0]
+          comment: 小巧快速的 PDF、電子書,也可以看漫畫，觸控螢幕友好。
+          links: [{class: homepage, href: "https://www.sumatrapdfreader.org/"}]
+          install: [{class: winget, content: "winget install -e --id SumatraPDF.SumatraPDF"}]
+        - publisher: PDF Arranger
+          name: PDF Arranger
+          price: free
+          license: [GPL-3.0]
+          comment: 小巧快速的 PDF 整並、拆分、旋轉、裁切、排序、提取 等功能。
+          links: [{class: github, href: "https://github.com/pdfarranger/pdfarranger"}]
+          install: [{class: winget, content: "winget install -e --id PDFArranger.PDFArranger"}]
+        - publisher: Ghostscript
+          name: Ghostscript
+          price: free
+          license: [GPL-2.0-or-later]
+          tags: [命令列工具]
+          comment: PDF 轉檔工具。
+          note: 通常是被別的軟體需要。
+          links: [{class: homepage, href: "https://ghostscript.com/"}]
       - name: E-Book - 電子書
         id: ebook
         type: folder
@@ -936,7 +1044,7 @@ contents:
       - publisher: PasteBar
         name: PasteBar
         price: free
-        license: [CC-BY-NC]
+        license: [GPL-3.0]
         comment: 未來可期待的剪貼板管理器。真正的剪貼板，有個看得見的「板」，「剪貼」上面的內容。
         links: [{class: homepage, href: "https://ditto-cp.sourceforge.io/"}]
         install: [{class: winget, content: "winget install -e --id PasteBar.PasteBar"}]
@@ -974,7 +1082,7 @@ contents:
         price: free
         license: [MIT]
         comment: 調節多個螢幕的亮度。
-        links: 
+        links:
           - {class: homepage, href: "https://twinkletray.com"}
           - {class: github, href: "https://github.com/xanderfrangos/twinkle-tray"}
         install: [{class: winget, content: "winget install -e --id 9PLJWWSV01LK -s msstore"}]
@@ -1068,6 +1176,15 @@ contents:
         comment: Windows 官方收編的，系統工具集合。
         links: [{class: homepage, href: "https://docs.microsoft.com/en-us/sysinternals/"}]
         install: [{class: winget, content: "winget install -e --id Microsoft.Sysinternals.Suite"}]
+      - publisher: Seerge
+        name: G-Helper
+        price: free
+        license: [GPL-3.0]
+        comment: 如果你和我一樣是封閉硬體廠商的受害者，例如〇碩的 Armoury Create 是不提供外界操作介入的，好在 G-Helper 提供了第三方的控制面板。
+        links:
+          - {class: homepage, href: "https://g-helper.com/"}
+          - {class: github, href: "https://github.com/seerge/g-helper"}
+        install: [{class: winget, content: "winget install -e --id seerge.g-helper"}]
       # - publisher: Avast
       #   name: CCleaner 家族
       #   price: free
@@ -1105,22 +1222,22 @@ contents:
         license: [Apache-2.0]
         tags: [自建置]
         comment: 自建置內容訂閱（Feed，或者更常見的名字 RSS）。
-        links: [{class: homepage, href: "https://miniflux.app/"}] 
+        links: [{class: homepage, href: "https://miniflux.app/"}]
       - publisher: Diced
         name: Zipline
         price: free
         license: [MIT]
         tags: [自建置]
         comment: 自建置短網址、Pastebin、檔案、圖片、影片分享、ShareX 伺服器。打破 Discord 最大檔案上傳限制。
-        links: [{class: homepage, href: "https://zipline.diced.sh/"}] 
+        links: [{class: homepage, href: "https://zipline.diced.sh/"}]
       - publisher: Komga
         name: Komga
         price: free
         license: [MIT]
         tags: [自建置]
         comment: 自建置漫畫圖書館。
-        links: [{class: homepage, href: "https://komga.org/"}] 
-  - name: AI / MachineLearning - 人工智慧／機器學習
+        links: [{class: homepage, href: "https://komga.org/"}]
+  - name: Artificial Intelligence - 人工智慧
     comment: 時代變了！大人！
     id: ai
     type: folder
@@ -1151,7 +1268,7 @@ contents:
         price: free
         license: [MIT]
         comment: 大語言模型的前端，支援 RAG、AI Agent、MCP 等功能，類似 Google NotebookLM。
-        links: 
+        links:
           - {class: homepage, href: "https://anythingllm.com/",}
           - {class: github, href: "https://github.com/Mintplex-Labs/anything-llm",}
       - publisher: Comfy
@@ -1159,7 +1276,7 @@ contents:
         price: free
         license: [GPL-3.0]
         comment: 影像大模型（例如 Stable Diffusion）工作流。
-        links: 
+        links:
           - {class: homepage, href: "https://comfy.org/",}
           - {class: github, href: "https://github.com/Comfy-Org/desktop/",}
         install: [{class: winget, content: "winget install -e --id Comfy.ComfyUI-Desktop"}]
@@ -1225,25 +1342,73 @@ contents:
         tags: [全家桶, 專業]
         comment: 現代的 IDE。
         links: [{class: homepage, href: "https://www.jetbrains.com/"}]
-      - name: Text editor - 文本编辑器
-        id: text-editor
-        type: folder
-        contents:
-          - publisher: Notepad++
-            name: Notepad++
-            price: free
-            license: [GPL-3.0-or-later]
-            tags: [台灣精品]
-            comment: 純文字＼程式碼編輯器，代替記事本，從此再也不怕亂碼。
-            links: [{class: homepage, href: "https://notepad-plus-plus.org"}]
-            install: [{class: winget, content: "winget install -e --id Notepad++.Notepad++"}]
-          - publisher: Microsoft
-            name: Visual Studio Code
-            price: free
-            license: [Proprietary]
-            comment: Microsoft 出品，Visual Studio 系列，純文字＼程式碼編輯器，強大的擴展性，是偽裝成編輯器的 IDE。
-            links: [{class: homepage, href: "https://code.visualstudio.com/"}]
-            install: [{class: winget, content: "winget install -e --id Microsoft.VisualStudioCode"}]
+  - name: Text Editor - 文本编辑器
+    id: text-editor
+    type: folder
+    contents:
+      - publisher: Notepad++
+        name: Notepad++
+        price: free
+        license: [GPL-3.0-or-later]
+        tags: [台灣精品]
+        comment: 純文字＼程式碼編輯器，啟動速度快，可以代替愈發臃腫的記事本，從此再也不怕亂碼。
+        links: [{class: homepage, href: "https://notepad-plus-plus.org"}]
+        install: [{class: winget, content: "winget install -e --id Notepad++.Notepad++"}]
+      - publisher: Microsoft
+        name: Visual Studio Code
+        price: free
+        license: [Proprietary]
+        comment: Microsoft 出品的純文字＼程式碼編輯器，Visual Studio 家族產品，有強大的擴展性，是偽裝成編輯器的 IDE。
+        links: [{class: homepage, href: "https://code.visualstudio.com/"}]
+        install: [{class: winget, content: "winget install -e --id Microsoft.VisualStudioCode"}]
+      - publisher: Vim
+        name: Vim
+        price: free
+        license: [GPL-2.0]
+        tags: [命令列工具, 硬核]
+        comment: 命令列介面中的純文字＼程式碼編輯器，即是傳說中的「編輯器之神」，<del>我還不會用，但是大家都再用。</del>
+        links: [{class: homepage, href: "https://www.vim.org/"}]
+        install: [{class: winget, content: "winget install -e --id vim.vim"}]
+      - publisher: Neovim
+        name: Neovim
+        price: free
+        license: [Apache-2.0]
+        tags: [命令列工具, 硬核]
+        comment: 命令列介面中的純文字＼程式碼編輯器，Vim 精神後繼，<del>但我還不會用。</del>
+        links: [{class: homepage, href: "https://neovim.io/"}]
+        install: [{class: winget, content: "winget install -e --id Helix.Helix"}]
+      - publisher: GNU
+        name: Emacs
+        price: free
+        license: [GPL-3.0]
+        tags: [命令列工具, 硬核]
+        comment: 命令列介面中的純文字＼程式碼編輯器，即是傳說中的「神的編輯器」，<del>但我還不會用，是偽裝成文字編輯器的作業系統。</del>
+        links: [{class: homepage, href: "https://www.gnu.org/s/emacs/"}]
+        install: [{class: winget, content: "winget install -e --id GNU.Emacs"}]
+      - publisher: GNU
+        name: Nano
+        price: free
+        license: [GPL-3.0]
+        tags: [命令列工具]
+        comment: 少數「不硬核」的命令列介面中的純文字編輯器，簡單、純粹、可靠。可以當成命令列介面中的記事本。
+        links: [{class: homepage, href: "https://www.nano-editor.org/"}]
+        install: [{class: winget, content: "winget install -e --id GNU.Nano"}]
+      - publisher: zyedidia
+        name: micro
+        price: free
+        license: [MIT]
+        tags: [命令列工具]
+        comment: 命令列介面中的純文字編輯器，<del>但我還不會用。</del>
+        links: [{class: homepage, href: "https://micro-editor.github.io/"}]
+        install: [{class: winget, content: "winget install -e --id zyedidia.micro"}]
+      - publisher: Helix
+        name: Helix
+        price: free
+        license: [MPL-2.0]
+        tags: [命令列工具, 硬核]
+        comment: 命令列介面中的純文字＼程式碼編輯器。<del>新興宗教（？），但我還不會用。</del>
+        links: [{class: homepage, href: "https://helix-editor.com/"}]
+        install: [{class: winget, content: "winget install -e --id Helix.Helix"}]
   - name: Package Manager - 程式管家
     id: package-manager
     type: folder
@@ -1251,7 +1416,7 @@ contents:
       - publisher: Valve
         name: Steam
         price: freemium
-        license: [Proprietary] 
+        license: [Proprietary]
         comment: 其實是數位發行平台，不只是遊戲，還有軟體、影片、音樂...
         links: [{class: homepage, href: https://store.steampowered.com/}]
         install: [{class: winget, content: "winget install -e --id Valve.Steam"}]
@@ -1260,7 +1425,7 @@ contents:
         price: free
         license: [GPL-2.0]
         comment: 便攜軟體，使得軟體不依賴電腦。
-        links: 
+        links:
           - {class: homepage, href: "https://PortableApps.com/"}
       - publisher: Microsoft
         name: Windows Package Manager
@@ -1268,7 +1433,7 @@ contents:
         license: [MIT]
         tags: [內建於 Windows]
         comment: Windows 內建的軟體套件管理器。
-        links: 
+        links:
           - {class: homepage, href: "https://learn.microsoft.com/windows/package-manager/"}
           - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/command_line_useages/windows-package-managers/"}
       - publisher: ScoopInstaller
@@ -1277,7 +1442,7 @@ contents:
         license: [Unlicense, MIT]
         tags: [命令列工具]
         comment: Windows 上的軟體套件管理器，專注於命令列工具和便攜式軟體。
-        links: 
+        links:
           - {class: homepage, href: "https://scoop.sh/"}
           - {class: github, href: "https://github.com/ScoopInstaller/Scoop"}
           - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/command_line_useages/windows-package-managers/"}
@@ -1287,7 +1452,7 @@ contents:
         license: [Apache-2.0]
         tags: [命令列工具]
         comment: Windows 上的軟體套件管理器。
-        links: 
+        links:
           - {class: homepage, href: "https://chocolatey.org/"}
           - {class: github, href: "https://github.com/ScoopInstaller/Scoop"}
           - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/command_line_useages/windows-package-managers/"}
