@@ -274,7 +274,7 @@ contents:
         comment: 超強大播放器核心。需要外掛讓你便利使用。
         links:
           - {class: homepage, href: "https://mpv.io/"}
-          - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/make_surface_great_again/mpv-touch-gestures/"}
+          - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/make-surface-great-again/mpv-touch-gestures/"}
         install: [{class: scoop, content: "scoop install extras/mpv"}]
         contents:
           - publisher:  tomasklaen
@@ -1294,9 +1294,9 @@ contents:
         comment: 日語文字轉語音。包括大家熟知的ずんだもん。
         links: [{class: homepage, href: "https://voicevox.hiroshiba.jp/"}]
         install: [{class: winget, content: "winget install -e --id HiroshibaKazuyuki.VOICEVOX"}]
-  - name: Develoment - 程式開發
+  - name: Development - 程式開發
     comment: 講道理，不寫程式也該試試他們。
-    id: develoment
+    id: development
     type: folder
     contents:
       - publisher: Git
@@ -1342,7 +1342,7 @@ contents:
         tags: [全家桶, 專業]
         comment: 現代的 IDE。
         links: [{class: homepage, href: "https://www.jetbrains.com/"}]
-  - name: Text Editor - 文本编辑器
+  - name: Text Editor - 文字編輯器
     id: text-editor
     type: folder
     contents:
@@ -1431,11 +1431,11 @@ contents:
         name: Windows Package Manager
         price: free
         license: [MIT]
-        tags: [內建於 Windows]
+        tags: [內建在 Windows]
         comment: Windows 內建的軟體套件管理器。
         links:
           - {class: homepage, href: "https://learn.microsoft.com/windows/package-manager/"}
-          - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/command_line_useages/windows-package-managers/"}
+          - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/command-line-guide/windows-package-managers/"}
       - publisher: ScoopInstaller
         name: Scoop
         price: free
@@ -1445,7 +1445,7 @@ contents:
         links:
           - {class: homepage, href: "https://scoop.sh/"}
           - {class: github, href: "https://github.com/ScoopInstaller/Scoop"}
-          - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/command_line_useages/windows-package-managers/"}
+          - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/command-line-guide/windows-package-managers/"}
       - publisher: Chocolatey
         name: Chocolatey
         price: freemium
@@ -1455,5 +1455,5 @@ contents:
         links:
           - {class: homepage, href: "https://chocolatey.org/"}
           - {class: github, href: "https://github.com/ScoopInstaller/Scoop"}
-          - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/command_line_useages/windows-package-managers/"}
+          - {class: site, content: 本站介紹, href: "https://undecv.github.io/blog/posts/command-line-guide/windows-package-managers/"}
         install: [{class: winget, content: "winget install -e --id Chocolatey.Chocolatey"}]
