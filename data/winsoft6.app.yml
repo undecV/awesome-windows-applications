@@ -315,7 +315,7 @@ contents:
             price: free
             tags: [專業]
             license: [GPL-2.0]
-            comment: 實況、直播串流、錄屏的幾乎是業界標準。
+            comment: 實況、直播串流、錄屏的業界標準。
             links: [{class: homepage, href: "https://obsproject.com/"}]
             install: [{class: winget, content: "winget install -e --id OBSProject.OBSStudio"}]
           - publisher: KDE
@@ -335,7 +335,7 @@ contents:
             price: free
             tags: [專業]
             license: [GPL-2.0]
-            comment: 簡單的影片處理剪輯。
+            comment: 簡單的影片剪輯。
             links: [{class: homepage, href: http://avidemux.sourceforge.net"}]
             install: [{class: winget, content: "winget install -e --id Avidemux.Avidemux"}]
           - publisher: Aegisub
@@ -343,7 +343,7 @@ contents:
             price: free
             tags: [專業]
             license: [GPL-2.0]
-            comment: 字幕時間軸。
+            comment: 字幕編輯器。
             links: [{class: homepage, href: "https://aegisub.org/"}]
             install: [{class: winget, content: "winget install -e --id Aegisub.Aegisub"}]
           - publisher: MoritzBunkus
@@ -354,6 +354,14 @@ contents:
             comment: MKV、WEBM 的打包解包工具。
             links: [{class: homepage, href: "https://obsproject.com/"}]
             install: [{class: winget, content: "winget install -e --id MoritzBunkus.MKVToolNix"}]
+          - publisher: HandBrake
+            name: HandBrake
+            price: free
+            tags: []
+            license: [GPL-2.0]
+            comment: 影片轉檔、轉碼工具。
+            links: [{class: homepage, href: "https://handbrake.fr/"}]
+            install: [{class: winget, content: "winget install -e --id HandBrake.HandBrake"}]
           - publisher: Maruko
             name: Maruko Toolbox
             price: free
@@ -746,6 +754,7 @@ contents:
         license: [Proprietary]
         tags: [專業]
         comment: 擷取網路流量的工具。
+        note: 通常是被別的軟體需要。
         links: [{class: homepage, href: "https://npcap.com/"}]
   - name: Office - 辦公室／文書處理
     id: office
@@ -1366,7 +1375,7 @@ contents:
         price: free
         license: [GPL-2.0]
         tags: [命令列工具, 硬核]
-        comment: 命令列介面中的純文字＼程式碼編輯器，即是傳說中的「編輯器之神」，<del>我還不會用，但是大家都再用。</del>
+        comment: 命令列介面中的純文字＼程式碼編輯器，即是傳說中的「編輯器之神」，<del>我還不會用，但是大家都在用。</del>
         links: [{class: homepage, href: "https://www.vim.org/"}]
         install: [{class: winget, content: "winget install -e --id vim.vim"}]
       - publisher: Neovim
